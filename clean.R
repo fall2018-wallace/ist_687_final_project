@@ -14,4 +14,4 @@ CleanSatisfaction<-raw_data[(raw_data$Satisfaction=="1" |
 #clean_data
 nrow(CleanSatisfaction)
 omitted<-na.omit(CleanSatisfaction)
-nrow(omitted)
+nrow(CleanSatisfaction)-nrow(omitted)
