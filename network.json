@@ -37,11 +37,11 @@
         },
         {
             "assigned_to": "mfurtado",
-            "desc": "",
+            "desc": "Deleted extra 3 columns based on satisfaction",
             "name": "clean.R",
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-18 17:01:07",
+    "updated_at": "2018-10-18 17:40:49",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
