@@ -38,6 +38,16 @@
             ],
             "source": "clean.R",
             "target": "Insight1.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "Plot1",
+                    "type": "png"
+                }
+            ],
+            "source": "Insight1.R",
+            "target": "Plot1.png"
         }
     ],
     "nodes": [
@@ -66,6 +76,6 @@
             "name": "Plot1.png"
         }
     ],
-    "updated_at": "2018-10-25 17:32:40",
+    "updated_at": "2018-10-25 17:33:05",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
