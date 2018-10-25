@@ -12,13 +12,14 @@ CleanSatisfaction<-raw_data[(raw_data$Satisfaction=="1" |
             raw_data$Satisfaction=="5" ),]
 #clean_data <- subset(raw_data,trimws(raw_data$Satisfaction)==c(1:5))
 #clean_data
+
 nrow(CleanSatisfaction)
 omitted<-na.omit(CleanSatisfaction)
 nrow(CleanSatisfaction)-nrow(omitted)
 
-df<-read.table(choose.files(),header = T,sep = ",")
-head(is.na(df),n = 129886)
-df<-na.omit(df)#Remove rows that contain missing data.
+#df<-read.table(choose.files(),header = T,sep = ",")
+#head(is.na(df),n = 129886)
+CleanSatisfaction<-na.omit(CleanSatisfaction)#Remove rows that contain missing data.
 LM1<-lm(Satisfaction~AirlineStatus+Age+Gender+PriceSensitivity+YearofFirstFlight+NoofFlightsp.a.+ofFlightwithotherAirlines+TypeofTravel+NumofotherLoyaltyCards+ShoppingAmountatAirport+EatingandDrinkingatAirport+Class+DayofMonth+Flightdate+AirlineCode+ScheduledDepartureHour+DepartureDelayinMinutes+ArrivalDelayinMinutes+Flightcancelled1+Flighttimeinminutes+FlightDistance+ArrivalDelaygreater5Mins,data=df)
 summary(LM1)
 #remove the variables with P-value > 0.05. 
