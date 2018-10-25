@@ -20,6 +20,7 @@ nrow(CleanSatisfaction)-nrow(omitted)
 #df<-read.table(choose.files(),header = T,sep = ",")
 #head(is.na(df),n = 129886)
 CleanSatisfaction<-na.omit(CleanSatisfaction)#Remove rows that contain missing data.
+df<-CleanSatisfaction
 LM1<-lm(Satisfaction~AirlineStatus+Age+Gender+PriceSensitivity+YearofFirstFlight+NoofFlightsp.a.+ofFlightwithotherAirlines+TypeofTravel+NumofotherLoyaltyCards+ShoppingAmountatAirport+EatingandDrinkingatAirport+Class+DayofMonth+Flightdate+AirlineCode+ScheduledDepartureHour+DepartureDelayinMinutes+ArrivalDelayinMinutes+Flightcancelled1+Flighttimeinminutes+FlightDistance+ArrivalDelaygreater5Mins,data=df)
 summary(LM1)
 #remove the variables with P-value > 0.05. 
