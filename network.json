@@ -57,10 +57,15 @@
             "task_status": "in progress"
         },
         {
+            "assigned_to": "mfurtado",
             "desc": "",
-            "name": "Insight1.R"
+            "name": "Insight1.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "Plot1.png"
         }
     ],
-    "updated_at": "2018-10-25 17:28:26",
+    "updated_at": "2018-10-25 17:32:40",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
