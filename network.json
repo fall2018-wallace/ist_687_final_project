@@ -27,8 +27,12 @@
             "desc": "Deleted extra 3 columns based on satisfaction",
             "name": "clean.R",
             "task_status": "validating"
+        },
+        {
+            "desc": "",
+            "name": "Model.R"
         }
     ],
-    "updated_at": "2018-10-25 16:44:03",
+    "updated_at": "2018-10-25 17:03:32",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
