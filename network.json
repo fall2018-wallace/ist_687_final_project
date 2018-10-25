@@ -44,8 +44,12 @@
             "desc": "",
             "name": "Model.R",
             "task_status": "in progress"
+        },
+        {
+            "desc": "",
+            "name": "Insight1.R"
         }
     ],
-    "updated_at": "2018-10-25 17:07:28",
+    "updated_at": "2018-10-25 17:28:17",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
