@@ -16,24 +16,11 @@
             ],
             "source": "satisfactionSurvey.csv",
             "target": "clean.R"
-        },
-        {
-            "ports": [
-                {
-                    "output": "clean_data",
-                    "type": "csv"
-                }
-            ],
-            "source": "clean.R",
-            "target": "data.csv"
         }
     ],
     "nodes": [
         {
             "name": "satisfactionSurvey.csv"
-        },
-        {
-            "name": "data.csv"
         },
         {
             "assigned_to": "mfurtado",
@@ -42,6 +29,6 @@
             "task_status": "validating"
         }
     ],
-    "updated_at": "2018-10-25 16:39:46",
+    "updated_at": "2018-10-25 16:42:07",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
