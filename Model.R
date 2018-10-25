@@ -1,7 +1,7 @@
 
 
 str(df)
-LM1<-lm(Satisfaction~AirlineStatus+Age+Gender+PriceSensitivity+YearofFirstFlight+NoofFlightspa+NoofFlightwithotherAirlines+TypeofTravel+NumofotherLoyaltyCards+ShoppingAmountatAirport+EatingandDrinkingatAirport+Class+DayofMonth+Flightdate+AirlineCode+ScheduledDepartureHour+DepartureDelayinMinutes+ArrivalDelayinMinutes+Flightcancelled1+Flighttimeinminutes+FlightDistance+ArrivalDelaygreater5Mins,data=df)
+LM1<-lm(Satisfaction~Airline.Status+Age+Gender+Price.Sensitivity+ear.of.First.Flight+No.of.Flights.p.a.+X..of.Flight.with.other.Airlines+Type.of.Travel +No..of.other.Loyalty.Cards+ShoppingAmountatAirport+EatingandDrinkingatAirport+Class+DayofMonth+Flightdate+AirlineCode+ScheduledDepartureHour+DepartureDelayinMinutes+ArrivalDelayinMinutes+Flightcancelled1+Flighttimeinminutes+FlightDistance+ArrivalDelaygreater5Mins,data=df)
 summary(LM1)
 #remove the variables with P-value > 0.05. 
 LM2<-lm(Satisfaction~AirlineStatus+Age+Gender+PriceSensitivity+YearofFirstFlight+NoofFlightspa+TypeofTravel+ShoppingAmountatAirport+EatingandDrinkingatAirport+Class+ScheduledDepartureHour+ArrivalDelaygreater5Mins,data=df)
