@@ -1,7 +1,5 @@
 
-colnames(CleanSatisfaction)<-gsub(" ", "", colnames(CleanSatisfaction))
-colnames(CleanSatisfaction)<-gsub("\\.", "", colnames(CleanSatisfaction))
-df<-CleanSatisfaction
+
 str(df)
 LM1<-lm(Satisfaction~AirlineStatus+Age+Gender+PriceSensitivity+YearofFirstFlight+NoofFlightspa+NoofFlightwithotherAirlines+TypeofTravel+NumofotherLoyaltyCards+ShoppingAmountatAirport+EatingandDrinkingatAirport+Class+DayofMonth+Flightdate+AirlineCode+ScheduledDepartureHour+DepartureDelayinMinutes+ArrivalDelayinMinutes+Flightcancelled1+Flighttimeinminutes+FlightDistance+ArrivalDelaygreater5Mins,data=df)
 summary(LM1)
