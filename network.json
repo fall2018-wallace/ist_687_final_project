@@ -16,6 +16,17 @@
             ],
             "source": "satisfactionSurvey.csv",
             "target": "clean.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "df",
+                    "output": "df",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean.R",
+            "target": "Model.R"
         }
     ],
     "nodes": [
@@ -27,8 +38,14 @@
             "desc": "Deleted extra 3 columns based on satisfaction",
             "name": "clean.R",
             "task_status": "validating"
+        },
+        {
+            "assigned_to": "mfurtado",
+            "desc": "",
+            "name": "Model.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-25 16:44:03",
+    "updated_at": "2018-10-25 17:03:58",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
