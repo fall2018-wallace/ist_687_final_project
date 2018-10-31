@@ -1,0 +1,81 @@
+{
+    "collaborators": [
+        "agupta22",
+        "yzhong18",
+        "mfurtado",
+        "ljzeugne"
+    ],
+    "created_at": "2018-10-11 16:57:28",
+    "edges": [
+        {
+            "ports": [
+                {
+                    "input": "raw_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "satisfactionSurvey.csv",
+            "target": "clean.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "df",
+                    "output": "df",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean.R",
+            "target": "Model.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "df",
+                    "output": "df",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean.R",
+            "target": "Insight1.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "Plot1",
+                    "type": "png"
+                }
+            ],
+            "source": "Insight1.R",
+            "target": "Plot1.png"
+        }
+    ],
+    "nodes": [
+        {
+            "name": "satisfactionSurvey.csv"
+        },
+        {
+            "assigned_to": "yzhong18",
+            "desc": "Deleted extra 3 columns based on satisfaction",
+            "name": "clean.R",
+            "task_status": "validating"
+        },
+        {
+            "assigned_to": "mfurtado",
+            "desc": "",
+            "name": "Model.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "mfurtado",
+            "desc": "",
+            "name": "Insight1.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "Plot1.png"
+        }
+    ],
+    "updated_at": "2018-10-25 17:33:05",
+    "url": "https://github.com/fall2018-wallace/ist_687_final_project"
+}
