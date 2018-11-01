@@ -29,3 +29,4 @@ colnames(df)<-newCol
 
 df$Flightdate <- as.Date(df$Flightdate, "%m/%d/%y")
 df$Flightdate
+df
