@@ -27,4 +27,4 @@ newCol<-gsub("\\.", "", newCol)
 newCol
 colnames(df)<-newCol
 
-
+df$Flightdate
