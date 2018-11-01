@@ -1,2 +1,3 @@
 
 dfinsight <- df
+str(dfinsight)
