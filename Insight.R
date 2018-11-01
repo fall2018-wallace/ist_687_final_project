@@ -4,7 +4,7 @@ str(dfinsight)
 
 agevssatis <- function()
 {   
-    library(ggplot)
+    library(ggplot2)
     
     plot_comparison <- ggplot(dfinsight,aes(x=Age, y= Satisfaction)) + geom_histogram(bins = 50, color = "red", fill ="blue")
     
