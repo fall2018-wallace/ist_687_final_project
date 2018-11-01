@@ -5,6 +5,6 @@ library("ggplot2")
 
 
 df$SatisfactionJ<-jitter(df$Satisfaction)
-df$AgeJ<-jitter(df$Age)
+df$AgeJ<-as.numeric(jitter(df$Age))
 
 Plot1<-ggplot(df,aes(x=AgeJ,y=overallCustSatJ))+geom_point()+stat_smooth(method="lm",col="red")
