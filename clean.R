@@ -24,3 +24,4 @@ df<-omitted
 
 newCol<-na.omit(colnames(df))
 
+newCol
