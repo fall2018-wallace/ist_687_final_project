@@ -21,3 +21,6 @@ nrow(CleanSatisfaction)-nrow(omitted)
 #head(is.na(df),n = 129886)
 #CleanSatisfaction<-na.omit(CleanSatisfaction)#Remove rows that contain missing data.
 df<-omitted
+
+colnames(df)
+
