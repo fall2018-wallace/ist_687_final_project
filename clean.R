@@ -23,6 +23,6 @@ nrow(CleanSatisfaction)-nrow(omitted)
 df<-omitted
 
 newCol<-na.omit(colnames(df))
-newCol<-gsub("//.", "", newCol)
+newCol<-gsub("\\.", "", newCol)
 newCol
 colnames(df)<-newCol
