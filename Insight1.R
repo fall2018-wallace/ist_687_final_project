@@ -10,3 +10,4 @@ library("ggplot2")
 #Plot1<-ggplot(df,aes(x=Age,y=overallCustSat))+geom_point()+stat_smooth(method="lm",col="red")
 df$Flightdate <- as.Date(df$Flightdate , "%m/%d/%y")
 df$Flightdate 
+Plot1<-hist(df$Flightdate)
