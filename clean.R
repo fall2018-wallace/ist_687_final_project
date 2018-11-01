@@ -19,5 +19,10 @@ nrow(CleanSatisfaction)-nrow(omitted)
 
 #df<-read.table(choose.files(),header = T,sep = ",")
 #head(is.na(df),n = 129886)
-CleanSatisfaction<-na.omit(CleanSatisfaction)#Remove rows that contain missing data.
-df<-CleanSatisfaction
+#CleanSatisfaction<-na.omit(CleanSatisfaction)#Remove rows that contain missing data.
+df<-omitted
+
+newCol<-na.omit(colnames(df))
+newCol<-gsub("//.", "", newCol)
+newCol
+colnames(df)<-newCol
