@@ -20,4 +20,4 @@ nrow(CleanSatisfaction)-nrow(omitted)
 #df<-read.table(choose.files(),header = T,sep = ",")
 #head(is.na(df),n = 129886)
 #CleanSatisfaction<-na.omit(CleanSatisfaction)#Remove rows that contain missing data.
-df<-CleanSatisfaction
+df<-omitted
