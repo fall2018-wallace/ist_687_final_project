@@ -1,2 +1,2 @@
 
-str(df)
+dfinsight <- df
