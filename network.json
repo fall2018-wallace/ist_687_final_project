@@ -48,6 +48,17 @@
             ],
             "source": "Insight1.R",
             "target": "Plot1.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "dfinsight",
+                    "output": "df",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean.R",
+            "target": "Insight.R"
         }
     ],
     "nodes": [
@@ -80,6 +91,6 @@
             "name": "Insight.R"
         }
     ],
-    "updated_at": "2018-11-01 17:11:28",
+    "updated_at": "2018-11-01 17:12:28",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
