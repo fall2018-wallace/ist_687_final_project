@@ -22,5 +22,5 @@ nrow(CleanSatisfaction)-nrow(omitted)
 #CleanSatisfaction<-na.omit(CleanSatisfaction)#Remove rows that contain missing data.
 df<-omitted
 
-colnames(df)
+newCol<-na.omit(colnames(df))
 
