@@ -5,3 +5,4 @@ Plot1<-ggplot(df,aes(x=Age ,y=Satisfaction))+geom_point()+ggtitle("Customer Sati
 
 
 df$SatisfactionJ<-jitter(df$Satisfaction)
+df$AgeJ<-jitter(df$Age)
