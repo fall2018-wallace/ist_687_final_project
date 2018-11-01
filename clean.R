@@ -26,3 +26,5 @@ newCol<-na.omit(colnames(df))
 newCol<-gsub("\\.", "", newCol)
 newCol
 colnames(df)<-newCol
+
+
