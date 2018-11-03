@@ -1,5 +1,4 @@
 
-
 str(df)
 options(scipen=999999) # To obtain a distribution of values on the axes in readable form
 a<-sub("yes","1",df$ArrivalDelaygreater5Mins)
