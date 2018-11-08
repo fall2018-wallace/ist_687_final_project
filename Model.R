@@ -6,4 +6,4 @@ LM1<-lm(Satisfaction~Age+AirlineStatus+PriceSensitivity+YearofFirstFlight+NoofFl
 summary(LM1)
 #remove the variables with P-value > 0.05.
 LM2<-lm(Satisfaction~Age+AirlineStatus+PriceSensitivity+YearofFirstFlight+NoofFlightspa+TypeofTravel+ShoppingAmountatAirport+EatingandDrinkingatAirport+Class+ScheduledDepartureHour+ArrivalDelayinMinutes,data=df)
-
+summary(LM2)
