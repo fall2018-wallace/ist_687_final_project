@@ -1,5 +1,6 @@
 
 str(df)
+View（df）
 options(scipen=999999) # To obtain a distribution of values on the axes in readable form
 df$Satisfaction<-as.numeric(df$Satisfaction)
 a<-sub("Yes","1",df$Flightcancelled)
