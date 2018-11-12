@@ -3,7 +3,6 @@ a <- sub("No","0",df$Flightcancelled)
 b <- sub("Yes","1",a)
 df$Flightcancelled <- b
 df$Flightcancelled<-as.numeric(df$Flightcancelled)
-df$Satisfaction<-as.numeric(df$Satisfaction)
 str(df$Satisfaction)
 options(scipen=999999) # To obtain a distribution of values on the axes in readable form
 summary(df)
