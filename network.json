@@ -87,12 +87,12 @@
             "task_status": "in progress"
         },
         {
-            "assigned_to": "yzhong18",
+            "assigned_to": "mfurtado",
             "desc": "Deleted extra 3 columns based on satisfaction",
             "name": "clean.R",
             "task_status": "validating"
         }
     ],
-    "updated_at": "2018-11-14 20:48:09",
+    "updated_at": "2018-11-14 20:48:42",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
