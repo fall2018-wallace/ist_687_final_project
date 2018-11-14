@@ -12,7 +12,8 @@ CleanSatisfaction<-raw_data[(raw_data$Satisfaction=="1" |
             raw_data$Satisfaction=="5" ),]
 #clean_data <- subset(raw_data,trimws(raw_data$Satisfaction)==c(1:5))
 #clean_data
-
+df<-CleanSatisfaction
+newCol<-colnames(CleanSatisfaction)
 newCol<-gsub("\\.", "", newCol)
 newCol
 colnames(df)<-newCol
