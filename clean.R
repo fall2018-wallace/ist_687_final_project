@@ -16,3 +16,4 @@ CleanSatisfaction<-raw_data[(raw_data$Satisfaction=="1" |
 newCol<-gsub("\\.", "", newCol)
 newCol
 colnames(df)<-newCol
+
