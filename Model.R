@@ -33,8 +33,6 @@ noofflightspa<-createBuckets(df$NoofFlightspa)
 shoppingamount<-createBuckets(df$ShoppingAmountatAirport)
 scheduleddeparturehour<-createBuckets(df$ScheduledDepartureHour)
 
-intsall.package("arules")
-intsall.package("arulesViz")
 library(arules)
 library(arulesViz)
 ruleDF<- data.frame(satisfaction,df$AirlineStatus,age,df$Gender,pricesensitive,yearoffirstflight,noofflightspa,df$TypeofTravel,shoppingamount,df$Class,scheduleddeparturehour,df$ArrivalDelaygreater5Mins)
