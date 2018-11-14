@@ -21,8 +21,9 @@ nrow(CleanSatisfaction)
 #head(is.na(df),n = 129886)
 #CleanSatisfaction<-na.omit(CleanSatisfaction)#Remove rows that contain missing data.
 #df<-omitted
+df<-CleanSatisfaction
 
 newCol<-na.omit(colnames(df))
-newCol<-gsub("\\.", "", newCol)
+newCol<-gsub("\\.", "", df)
 newCol
 colnames(df)<-newCol
