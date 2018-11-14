@@ -24,6 +24,6 @@ nrow(CleanSatisfaction)
 df<-CleanSatisfaction
 
 newCol<-na.omit(colnames(df))
-newCol<-gsub("\\.", "", df)
+newCol<-gsub("\\.", "", newCol)
 newCol
 colnames(df)<-newCol
