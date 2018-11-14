@@ -66,12 +66,6 @@
             "name": "satisfactionSurvey.csv"
         },
         {
-            "assigned_to": "yzhong18",
-            "desc": "Deleted extra 3 columns based on satisfaction",
-            "name": "clean.R",
-            "task_status": "validating"
-        },
-        {
             "name": "Plot1.png"
         },
         {
@@ -91,8 +85,14 @@
             "desc": "",
             "name": "Model.R",
             "task_status": "in progress"
+        },
+        {
+            "assigned_to": "mfurtado",
+            "desc": "Deleted extra 3 columns based on satisfaction",
+            "name": "clean.R",
+            "task_status": "validating"
         }
     ],
-    "updated_at": "2018-11-14 19:44:09",
+    "updated_at": "2018-11-14 20:47:35",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
