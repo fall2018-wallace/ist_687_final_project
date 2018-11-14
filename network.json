@@ -87,12 +87,12 @@
             "task_status": "in progress"
         },
         {
-            "assigned_to": "yzhong18",
+            "assigned_to": "mfurtado",
             "desc": "",
             "name": "Model.R",
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-12 04:38:59",
+    "updated_at": "2018-11-14 19:44:09",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
