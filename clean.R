@@ -14,13 +14,13 @@ CleanSatisfaction<-raw_data[(raw_data$Satisfaction=="1" |
 #clean_data
 
 nrow(CleanSatisfaction)
-omitted<-na.omit(CleanSatisfaction)
-nrow(CleanSatisfaction)-nrow(omitted)
+#omitted<-na.omit(CleanSatisfaction)
+#nrow(CleanSatisfaction)-nrow(omitted)
 
 #df<-read.table(choose.files(),header = T,sep = ",")
 #head(is.na(df),n = 129886)
 #CleanSatisfaction<-na.omit(CleanSatisfaction)#Remove rows that contain missing data.
-df<-omitted
+#df<-omitted
 
 newCol<-na.omit(colnames(df))
 newCol<-gsub("\\.", "", newCol)
