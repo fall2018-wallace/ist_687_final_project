@@ -36,7 +36,7 @@ scheduleddeparturehour<-createBuckets(df$ScheduledDepartureHour)
 library(arules)
 library(arulesViz)
 ruleDF<- data.frame(satisfaction,df$AirlineStatus,age,df$Gender,pricesensitive,yearoffirstflight,noofflightspa,df$TypeofTravel,shoppingamount,df$Class,scheduleddeparturehour,df$ArrivalDelaygreater5Mins)
-hotelSurveyX <- ruleDF#as(ruleDF,"transactions")
+hotelSurveyX <- as(ruleDF,"transactions")
 
 itemFrequencyPlot(hotelSurveyX,support=0.1)
 
