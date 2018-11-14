@@ -40,7 +40,7 @@ hotelSurveyX <- as(ruleDF,"transactions")
 
 itemFrequencyPlot(hotelSurveyX,support=0.1)
 
-ruleset<- apriori(hotelSurveyX, parameter=list(support=0.1, confidence=0.5), appearance = list(default="lhs", rhs=("satisfaction=High")))
+ruleset<- apriori(hotelSurveyX, parameter=list(support=0.1, confidence=0.5))
 ruleset
 
 goodruleset<-sort(ruleset,decreasing=TRUE,by="lift")[1,10]
