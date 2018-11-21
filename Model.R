@@ -2,7 +2,7 @@
 
 str(df)
 options(scipen=999999) # To obtain a distribution of values on the axes in readable form
-
+#linear modeling
 a <- sub("No","0",df$Flightcancelled)
 b <- sub("Yes","1",a)
 df$Flightcancelled <- b
@@ -13,6 +13,8 @@ LM1<-lm(Satisfaction~AirlineStatus+Age+Gender+PriceSensitivity+YearofFirstFlight
 summary(LM1)
 LM2<-lm(Satisfaction~AirlineStatus+Age+Gender+PriceSensitivity+YearofFirstFlight+NoofFlightspa+TypeofTravel+ShoppingAmountatAirport+Class+ScheduledDepartureHour+ArrivalDelaygreater5Mins,data=df)
 summary(LM2)
+
+#
 createBuckets<- function(vec){
   q <- quantile(vec, c(0.4, 0.6))
   vBuckets <- replicate(length(vec), "Average")
