@@ -2,6 +2,7 @@
 
 str(df)
 options(scipen=999999) # To obtain a distribution of values on the axes in readable form
+
 #linear modeling
 a <- sub("No","0",df$Flightcancelled)
 b <- sub("Yes","1",a)
@@ -14,7 +15,7 @@ summary(LM1)
 LM2<-lm(Satisfaction~AirlineStatus+Age+Gender+PriceSensitivity+YearofFirstFlight+NoofFlightspa+TypeofTravel+ShoppingAmountatAirport+Class+ScheduledDepartureHour+ArrivalDelaygreater5Mins,data=df)
 summary(LM2)
 
-#
+#association rule mining 
 createBuckets<- function(vec){
   q <- quantile(vec, c(0.4, 0.6))
   vBuckets <- replicate(length(vec), "Average")
@@ -22,10 +23,6 @@ createBuckets<- function(vec){
   vBuckets[vec > q[2]] <- "High"
   return(vBuckets)
 }
-
-
-
-
 
 satisfaction<-createBuckets(df$Satisfaction)
 age<-createBuckets(df$Age)
