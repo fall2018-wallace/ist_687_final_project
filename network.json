@@ -138,10 +138,12 @@
             "task_status": "in progress"
         },
         {
+            "assigned_to": "agupta22",
             "desc": "",
-            "name": "AssociationRule.R"
+            "name": "AssociationRule.R",
+            "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-11-29 18:26:09",
+    "updated_at": "2018-11-29 18:26:17",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
