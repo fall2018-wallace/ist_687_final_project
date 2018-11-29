@@ -88,11 +88,15 @@
         },
         {
             "assigned_to": "mfurtado",
-            "desc": "Deleted extra 3 columns based on satisfaction",
+            "desc": "Deleted extra 3 columns based on satisfaction\r\n\r\nCleaned and used the output for model. R\r\n",
             "name": "clean.R",
-            "task_status": "validating"
+            "task_status": "completed"
+        },
+        {
+            "desc": "The Client can be changed here, kept separate for convenience",
+            "name": "SelectDataSet.R"
         }
     ],
-    "updated_at": "2018-11-14 20:52:10",
+    "updated_at": "2018-11-29 18:06:50",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
