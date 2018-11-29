@@ -1,4 +1,7 @@
 
+summary(df)
+
+
 Custdf<-subset(df,)
 
 positive = posWords[which(posWords >=2)]
