@@ -121,12 +121,6 @@
         },
         {
             "assigned_to": "mfurtado",
-            "desc": "Deleted extra 3 columns based on satisfaction\r\n\r\nCleaned and used the output for model. R\r\n",
-            "name": "clean.R",
-            "task_status": "completed"
-        },
-        {
-            "assigned_to": "mfurtado",
             "desc": "The Client can be changed here, kept separate for convenience",
             "name": "SelectDataSet.R",
             "task_status": "in progress"
@@ -142,8 +136,14 @@
             "desc": "",
             "name": "AssociationRule.R",
             "task_status": "proposed"
+        },
+        {
+            "assigned_to": "mfurtado",
+            "desc": "Deleted extra 3 columns based on satisfaction\r\n\r\nCleaned and used the output for model. R\r\n",
+            "name": "clean.R",
+            "task_status": "validating"
         }
     ],
-    "updated_at": "2018-11-29 18:26:17",
+    "updated_at": "2018-11-29 18:29:22",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
