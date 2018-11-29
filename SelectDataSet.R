@@ -10,5 +10,7 @@ summary(Custdf)
 summary(df)
 
 #positive = posWords[which(posWords >=2)]
+df$AirlineName
+
 
 
