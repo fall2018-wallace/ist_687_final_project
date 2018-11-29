@@ -3,6 +3,7 @@
 str(df)
 options(scipen=999999) # To obtain a distribution of values on the axes in readable form
 
+#linear modeling
 a <- sub("No","0",df$Flightcancelled)
 b <- sub("Yes","1",a)
 df$Flightcancelled <- b
@@ -13,6 +14,8 @@ LM1<-lm(Satisfaction~AirlineStatus+Age+Gender+PriceSensitivity+YearofFirstFlight
 summary(LM1)
 LM2<-lm(Satisfaction~AirlineStatus+Age+Gender+PriceSensitivity+YearofFirstFlight+NoofFlightspa+TypeofTravel+ShoppingAmountatAirport+Class+ScheduledDepartureHour+ArrivalDelaygreater5Mins,data=df)
 summary(LM2)
+
+#association rule mining 
 createBuckets<- function(vec){
   q <- quantile(vec, c(0.4, 0.6))
   vBuckets <- replicate(length(vec), "Average")
@@ -20,10 +23,6 @@ createBuckets<- function(vec){
   vBuckets[vec > q[2]] <- "High"
   return(vBuckets)
 }
-
-
-
-
 
 satisfaction<-createBuckets(df$Satisfaction)
 age<-createBuckets(df$Age)
@@ -45,6 +44,20 @@ ruleset
 
 goodruleset<-sort(ruleset,decreasing=TRUE,by="lift")[1,10]
 inspect(goodruleset)
+
+#svm
+df$happy<-df$Satisfaction
+df$happy[df$happy>=4]<-"happy"
+df$happy[df$happy<4]<-"unhappy"
+df1<-data.frame(df$happy,df$AirlineStatus,df$Age,df$Gender,df$PriceSensitivity,df$YearofFirstFlight,df$NoofFlightspa,df$TypeofTravel,df$ShoppingAmountatAirport,df$Class,df$ScheduledDepartureHour,df$ArrivalDelaygreater5Mins)
+cutPoint2_3 <- floor(2 * dim(df1)[1]/3)
+randIndex <- sample(1:dim(df1)[1])
+trainData <- df1[randIndex[1:cutPoint2_3],]
+testData <- df1[randIndex[(cutPoint2_3+1):dim(df1)[1]],]
+dim(testData)
+dim(trainData)
+library(kernlab)
+svmOutput <- ksvm(df.happy ~ ., data=trainData, kernel = "rbfdot",kpar="automatic",C=5,cross=3, prob.model=TRUE)
 
 
 
