@@ -59,6 +59,39 @@
             ],
             "source": "clean.R",
             "target": "Insight.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "df",
+                    "output": "df",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean.R",
+            "target": "SelectDataSet.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "df",
+                    "output": "df",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "SelectDataSet.R",
+            "target": "LinearModel.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "df",
+                    "output": "df",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "SelectDataSet.R",
+            "target": "AssociationRule.R"
         }
     ],
     "nodes": [
@@ -88,11 +121,29 @@
         },
         {
             "assigned_to": "mfurtado",
-            "desc": "Deleted extra 3 columns based on satisfaction",
+            "desc": "The Client can be changed here, kept separate for convenience",
+            "name": "SelectDataSet.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "mfurtado",
+            "desc": "Linear model",
+            "name": "LinearModel.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "agupta22",
+            "desc": "",
+            "name": "AssociationRule.R",
+            "task_status": "proposed"
+        },
+        {
+            "assigned_to": "mfurtado",
+            "desc": "Deleted extra 3 columns based on satisfaction\r\n\r\nCleaned and used the output for model. R\r\n",
             "name": "clean.R",
             "task_status": "validating"
         }
     ],
-    "updated_at": "2018-11-14 20:52:10",
+    "updated_at": "2018-11-29 18:29:22",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
