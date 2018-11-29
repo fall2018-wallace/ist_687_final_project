@@ -4,6 +4,6 @@ summary(df)
 
 Custdf<-subset(df,AirlineName=="Southeast")
 
-length(Custdf)
+nrows(Custdf)
 Custdf
 
