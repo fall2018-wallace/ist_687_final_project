@@ -18,3 +18,12 @@ newCol<-gsub("\\.", "", newCol)
 newCol
 colnames(df)<-newCol
 
+
+a <- sub("No","0",df$Flightcancelled)
+b <- sub("Yes","1",a)
+df$Flightcancelled <- b
+df$Flightcancelled<-as.numeric(df$Flightcancelled)
+
+df$Satisfaction<- as.numeric(as.character(df$Satisfaction))
+
+
