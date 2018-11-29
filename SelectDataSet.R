@@ -7,7 +7,7 @@ Custdf<-df[df$AirlineName == 'Southeast',]
 
 summary(Custdf)
 
-summary
+summary(df)
 
 #positive = posWords[which(posWords >=2)]
 
