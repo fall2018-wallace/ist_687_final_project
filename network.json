@@ -121,10 +121,12 @@
             "task_status": "in progress"
         },
         {
-            "desc": "",
-            "name": "LinearModel.R"
+            "assigned_to": "mfurtado",
+            "desc": "Linear model",
+            "name": "LinearModel.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-29 18:25:17",
+    "updated_at": "2018-11-29 18:25:53",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
