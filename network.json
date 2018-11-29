@@ -59,6 +59,17 @@
             ],
             "source": "clean.R",
             "target": "Insight.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "df",
+                    "output": "df",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "clean.R",
+            "target": "SelectDataSet.R"
         }
     ],
     "nodes": [
@@ -97,6 +108,6 @@
             "name": "SelectDataSet.R"
         }
     ],
-    "updated_at": "2018-11-29 18:06:50",
+    "updated_at": "2018-11-29 18:07:59",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
