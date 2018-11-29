@@ -3,7 +3,7 @@
 
 
 #Custdf<-subset(df,AirlineName=="Southeast")
-Custdf<-df[which(df$AirlineName=="Southeast"]
+Custdf<-df[which(df$AirlineName=="Southeast")]
 
 summary(Custdf)
 
