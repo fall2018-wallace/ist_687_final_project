@@ -125,8 +125,12 @@
             "desc": "Linear model",
             "name": "LinearModel.R",
             "task_status": "in progress"
+        },
+        {
+            "desc": "",
+            "name": "AssociationRule.R"
         }
     ],
-    "updated_at": "2018-11-29 18:25:53",
+    "updated_at": "2018-11-29 18:25:54",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
