@@ -104,10 +104,12 @@
             "task_status": "completed"
         },
         {
+            "assigned_to": "mfurtado",
             "desc": "The Client can be changed here, kept separate for convenience",
-            "name": "SelectDataSet.R"
+            "name": "SelectDataSet.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-11-29 18:07:59",
+    "updated_at": "2018-11-29 18:08:51",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
