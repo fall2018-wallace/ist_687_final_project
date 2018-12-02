@@ -20,4 +20,5 @@ LMAge<-lm(Satisfaction~Age,data=df)
 summary(LMAge)
 
 LMGender<-lm(Satisfaction~Gender,data=df)
+summary(LMGender)
 
