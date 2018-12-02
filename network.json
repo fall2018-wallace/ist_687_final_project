@@ -60,6 +60,16 @@
             ],
             "source": "SelectDataSet.R",
             "target": "AssociationRule.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plotLM2",
+                    "type": "png"
+                }
+            ],
+            "source": "LinearModel.R",
+            "target": "LinearModel2Plot.png"
         }
     ],
     "nodes": [
@@ -100,6 +110,6 @@
             "name": "LinearModel2Plot.png"
         }
     ],
-    "updated_at": "2018-12-02 19:10:57",
+    "updated_at": "2018-12-02 19:13:49",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
