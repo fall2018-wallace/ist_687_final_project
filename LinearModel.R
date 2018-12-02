@@ -45,8 +45,10 @@ summary(LMClass)
 LMScheduledDepartureHour<-lm(Satisfaction~ScheduledDepartureHour,data=df)
 summary(LMScheduledDepartureHour)
 #-6.981177e-06
-LM5<-lm(Satisfaction~ArrivalDelaygreater5Mins,data=df)
-summary(LM5)
+
+#Linear Model with Arrival Delay greater 5Mins as predictor
+LMArrivalDelaygreater5Mins<-lm(Satisfaction~ArrivalDelaygreater5Mins,data=df)
+summary(LMArrivalDelaygreater5Mins)
 #0.02528861
 #Linear Model with Airline Status as predictor
 LMAirlineStatus<-lm(Satisfaction~AirlineStatus,data=df)
