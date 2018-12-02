@@ -95,8 +95,11 @@
             "desc": "Deleted extra 3 columns based on satisfaction\r\n\r\nCleaned and used the output for model. R\r\n",
             "name": "clean.R",
             "task_status": "validating"
+        },
+        {
+            "name": "LinearModel2Plot.png"
         }
     ],
-    "updated_at": "2018-12-02 18:43:26",
+    "updated_at": "2018-12-02 19:10:57",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
