@@ -34,5 +34,8 @@ ruleL<- apriori(hotelSurveyruleDFSE, parameter=list(support=0.01, confidence=0.9
 inspect(ruleL)
 plot(ruleL)
 
-goodrules1<-sort(ruleL,by="lift")[1:10]
+goodrules1<-sort(ruleH,by="lift")[1:10]
 inspect(goodrules1)
+
+goodrules2<-sort(ruleL,by="lift")[1:10]
+inspect(goodrules2)
