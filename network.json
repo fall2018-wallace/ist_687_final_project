@@ -26,17 +26,6 @@
                 }
             ],
             "source": "clean.R",
-            "target": "Model.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "df",
-                    "output": "df",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "clean.R",
             "target": "LinearModel.R"
         },
         {
@@ -60,6 +49,27 @@
             ],
             "source": "SelectDataSet.R",
             "target": "AssociationRule.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plotLM2",
+                    "type": "png"
+                }
+            ],
+            "source": "LinearModel.R",
+            "target": "LinearModel2Plot.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "df",
+                    "output": "df",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "SelectDataSet.R",
+            "target": "Model.R"
         }
     ],
     "nodes": [
@@ -95,8 +105,11 @@
             "desc": "Deleted extra 3 columns based on satisfaction\r\n\r\nCleaned and used the output for model. R\r\n",
             "name": "clean.R",
             "task_status": "validating"
+        },
+        {
+            "name": "LinearModel2Plot.png"
         }
     ],
-    "updated_at": "2018-12-02 18:43:26",
+    "updated_at": "2018-12-02 19:29:34",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
