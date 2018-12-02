@@ -24,6 +24,7 @@ summary(LMAge)
 LMGender<-lm(Satisfaction~Gender,data=df)
 summary(LMGender)
 
+#Linear Model with Price Sensitivity as predictor
 LMPriceSensitivity<-lm(Satisfaction~PriceSensitivitys,data=df)
 summary(LMPriceSensitivity)
 
