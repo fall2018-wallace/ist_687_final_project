@@ -69,7 +69,7 @@
                 }
             ],
             "source": "clean.R",
-            "target": "SelectDataSet.R"
+            "target": "LinearModel.R"
         },
         {
             "ports": [
@@ -79,8 +79,8 @@
                     "type": "r_obj"
                 }
             ],
-            "source": "SelectDataSet.R",
-            "target": "LinearModel.R"
+            "source": "clean.R",
+            "target": "SelectDataSet.R"
         },
         {
             "ports": [
@@ -135,7 +135,7 @@
             "assigned_to": "agupta22",
             "desc": "",
             "name": "AssociationRule.R",
-            "task_status": "proposed"
+            "task_status": "in progress"
         },
         {
             "assigned_to": "mfurtado",
@@ -144,6 +144,6 @@
             "task_status": "validating"
         }
     ],
-    "updated_at": "2018-11-29 18:29:22",
+    "updated_at": "2018-12-02 18:37:25",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
