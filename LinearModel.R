@@ -21,23 +21,59 @@ LM2<-lm(Satisfaction~AirlineStatus+Age+Gender+PriceSensitivity+YearofFirstFlight
 summary(LM2)
 
 #Below are Single linear regression models with only one variable with statistical significance
+#Linear Model with No of Flights p.a. as predictor
+LMNoofFlightspa<-lm(Satisfaction~NoofFlightspa,data=df)
+summary(LMNoofFlightspa)
+#Adjusted R-squared:  0.05671105
+
+#Linear Model with Type of Travel as predictor
+LMTypeofTravel<-lm(Satisfaction~TypeofTravel,data=df)
+summary(LMTypeofTravel)
+#Adjusted R-squared:  0.3350338
+
+#Linear Model with Shopping Amount at Airport as predictor
+LMShoppingAmountatAirport<-lm(Satisfaction~ShoppingAmountatAirport,data=df)
+summary(LMShoppingAmountatAirport)
+#Adjusted R-squared:  0.0002999279 
+
+#Linear Model with Class as predictor
+LMClass<-lm(Satisfaction~Class,data=df)
+summary(LMClass)
+#Adjusted R-squared:  0.002526544
+
+#Linear Model with Scheduled Departure Hour as predictor
+LMScheduledDepartureHour<-lm(Satisfaction~ScheduledDepartureHour,data=df)
+summary(LMScheduledDepartureHour)
+#Adjusted R-squared:  -6.981177e-06
+
+#Linear Model with Arrival Delay greater 5Mins as predictor
+LMArrivalDelaygreater5Mins<-lm(Satisfaction~ArrivalDelaygreater5Mins,data=df)
+summary(LMArrivalDelaygreater5Mins)
+#Adjusted R-squared:  0.02528861
+
 #Linear Model with Airline Status as predictor
 LMAirlineStatus<-lm(Satisfaction~AirlineStatus,data=df)
 summary(LMAirlineStatus)
+#Adjusted R-squared:  0.1184333 
 
 #Linear Model with Age as predictor
 LMAge<-lm(Satisfaction~Age,data=df)
 summary(LMAge)
+#Adjusted R-squared:  0.0492023
 
 #Linear Model with Gender as predictor
 LMGender<-lm(Satisfaction~Gender,data=df)
 summary(LMGender)
+#Adjusted R-squared:  0.01760919 
 
 #Linear Model with Price Sensitivity as predictor
 LMPriceSensitivity<-lm(Satisfaction~PriceSensitivity,data=df)
 summary(LMPriceSensitivity)
+#Adjusted R-squared:  0.007641272 
 
 #Linear Model with Airline Status Year of first flight as predictor
 LMFirstFlight<-lm(Satisfaction~YearofFirstFlight,data=df)
 summary(LMFirstFlight)
+#Adjusted R-squared:  5.270168e-05 
+
 
