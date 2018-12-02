@@ -1,6 +1,8 @@
 
 summary(df)
 
+#Business Approach: 
+
 #Linear regression model will all the variables included in the entire dataset
 #Used the p value to cut out variables that are of no statistical value to further analysis
 
