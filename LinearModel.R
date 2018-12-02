@@ -11,7 +11,7 @@ summary(LM1)
 LM2<-lm(Satisfaction~AirlineStatus+Age+Gender+PriceSensitivity+YearofFirstFlight+NoofFlightspa+TypeofTravel+ShoppingAmountatAirport+Class+ScheduledDepartureHour+ArrivalDelaygreater5Mins,data=df)
 summary(LM2)
 
-#Single linear regression models of only the variables with statistical significance
+#Below are Single linear regression models with only one variable with statistical significance
 LMAirlineStatus<-lm(Satisfaction~AirlineStatus,data=df)
 summary(LMAirlineStatus)
 
