@@ -20,6 +20,7 @@ summary(LMAirlineStatus)
 LMAge<-lm(Satisfaction~Age,data=df)
 summary(LMAge)
 
+#Linear Model with Gender as predictor
 LMGender<-lm(Satisfaction~Gender,data=df)
 summary(LMGender)
 
