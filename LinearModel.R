@@ -14,3 +14,7 @@ summary(LM2)
 #Single linear regression models of only the variables with statistical significance
 LMAirlineStatus<-lm(Satisfaction~AirlineStatus,data=df)
 summary(LMAirlineStatus)
+
+
+LMAge<-lm(Satisfaction~Age,data=df)
+
