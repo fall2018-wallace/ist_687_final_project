@@ -3,6 +3,7 @@ summary(df)
 
 #Business Approach: --> For Anant
 # For the first model (LM1) we included all the variables for the entire data set and based on the p value that are statistically significant
+# The second model (LM2) represents a linear regression model with only the variables that we observed to be statistically significant from model 1
 
 #Linear regression model will all the variables included in the entire dataset
 #Used the p value to cut out variables that are of no statistical value to further analysis
