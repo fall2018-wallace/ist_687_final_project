@@ -12,6 +12,6 @@ Custdf<-df[df$AirlineName == 'Southeast Airlines Co. ',]
 #positive = posWords[which(posWords >=2)]
 #df$AirlineName
 df<-Custdf
-
+str(df)
 
 
