@@ -90,7 +90,7 @@
                     "type": "r_obj"
                 }
             ],
-            "source": "LinearModel.R",
+            "source": "SelectDataSet.R",
             "target": "AssociationRule.R"
         }
     ],
@@ -144,6 +144,6 @@
             "task_status": "validating"
         }
     ],
-    "updated_at": "2018-12-02 18:37:10",
+    "updated_at": "2018-12-02 18:37:25",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
