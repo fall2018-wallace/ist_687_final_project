@@ -10,3 +10,5 @@ summary(LM1)
 #Linear regression model with only the variables that happen to be statistically significant
 LM2<-lm(Satisfaction~AirlineStatus+Age+Gender+PriceSensitivity+YearofFirstFlight+NoofFlightspa+TypeofTravel+ShoppingAmountatAirport+Class+ScheduledDepartureHour+ArrivalDelaygreater5Mins,data=df)
 summary(LM2)
+
+#Single linear regression models of only the variables with statistical significance
