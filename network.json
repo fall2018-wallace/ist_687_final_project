@@ -37,28 +37,7 @@
                 }
             ],
             "source": "clean.R",
-            "target": "Insight1.R"
-        },
-        {
-            "ports": [
-                {
-                    "output": "Plot1",
-                    "type": "png"
-                }
-            ],
-            "source": "Insight1.R",
-            "target": "Plot1.png"
-        },
-        {
-            "ports": [
-                {
-                    "input": "dfinsight",
-                    "output": "df",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "clean.R",
-            "target": "Insight.R"
+            "target": "LinearModel.R"
         },
         {
             "ports": [
@@ -80,38 +59,12 @@
                 }
             ],
             "source": "SelectDataSet.R",
-            "target": "LinearModel.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "df",
-                    "output": "df",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "SelectDataSet.R",
             "target": "AssociationRule.R"
         }
     ],
     "nodes": [
         {
             "name": "satisfactionSurvey.csv"
-        },
-        {
-            "name": "Plot1.png"
-        },
-        {
-            "assigned_to": "agupta22",
-            "desc": "",
-            "name": "Insight1.R",
-            "task_status": "in progress"
-        },
-        {
-            "assigned_to": "agupta22",
-            "desc": "Generate multiple insights",
-            "name": "Insight.R",
-            "task_status": "in progress"
         },
         {
             "assigned_to": "mfurtado",
@@ -135,7 +88,7 @@
             "assigned_to": "agupta22",
             "desc": "",
             "name": "AssociationRule.R",
-            "task_status": "proposed"
+            "task_status": "in progress"
         },
         {
             "assigned_to": "mfurtado",
@@ -144,6 +97,6 @@
             "task_status": "validating"
         }
     ],
-    "updated_at": "2018-11-29 18:29:22",
+    "updated_at": "2018-12-02 18:43:26",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }

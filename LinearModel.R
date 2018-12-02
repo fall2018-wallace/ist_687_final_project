@@ -1,5 +1,5 @@
 
-summary(df)
+str(df)
 
 #Business Approach: --> For Anant
 # For the first model (LM1) we included all the variables for the entire data set and based on the p value identified which variables are statistically significant
