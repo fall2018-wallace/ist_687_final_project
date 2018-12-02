@@ -21,6 +21,7 @@ LM2<-lm(Satisfaction~AirlineStatus+Age+Gender+PriceSensitivity+YearofFirstFlight
 summary(LM2)
 
 #Below are Single linear regression models with only one variable with statistical significance
+#Linear Model with No of Flights p.a. as predictor
 LM5<-lm(Satisfaction~NoofFlightspa,data=df)
 summary(LM5)
 #Adjusted R-squared:  0.05671105
