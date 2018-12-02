@@ -42,16 +42,6 @@
         {
             "ports": [
                 {
-                    "output": "Plot1",
-                    "type": "png"
-                }
-            ],
-            "source": "Insight1.R",
-            "target": "Plot1.png"
-        },
-        {
-            "ports": [
-                {
                     "input": "dfinsight",
                     "output": "df",
                     "type": "r_obj"
@@ -99,9 +89,6 @@
             "name": "satisfactionSurvey.csv"
         },
         {
-            "name": "Plot1.png"
-        },
-        {
             "assigned_to": "agupta22",
             "desc": "",
             "name": "Insight1.R",
@@ -144,6 +131,6 @@
             "task_status": "validating"
         }
     ],
-    "updated_at": "2018-12-02 18:37:25",
+    "updated_at": "2018-12-02 18:42:42",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
