@@ -21,6 +21,45 @@ LM2<-lm(Satisfaction~AirlineStatus+Age+Gender+PriceSensitivity+YearofFirstFlight
 summary(LM2)
 
 #Below are Single linear regression models with only one variable with statistical significance
+LM5<-lm(Satisfaction~NoofFlightspa,data=df)
+summary(LM5)
+#Adjusted R-squared:  0.05671105
+LM5<-lm(Satisfaction~TypeofTravel,data=df)
+summary(LM5)
+#Adjusted R-squared:  0.3350338
+LM5<-lm(Satisfaction~ShoppingAmountatAirport,data=df)
+summary(LM5)
+#0.0002999279 
+LM5<-lm(Satisfaction~Class,data=df)
+summary(LM5)
+#0.002526544
+LM5<-lm(Satisfaction~ScheduledDepartureHour,data=df)
+summary(LM5)
+#-6.981177e-06
+LM5<-lm(Satisfaction~ArrivalDelaygreater5Mins,data=df)
+summary(LM5)
+#0.02528861
+#Linear Model with Airline Status as predictor
+LMAirlineStatus<-lm(Satisfaction~AirlineStatus,data=df)
+summary(LMAirlineStatus)
+#0.1184333 
+#Linear Model with Age as predictor
+LMAge<-lm(Satisfaction~Age,data=df)
+summary(LMAge)
+#0.0492023
+#Linear Model with Gender as predictor
+LMGender<-lm(Satisfaction~Gender,data=df)
+summary(LMGender)
+#0.01760919 
+#Linear Model with Price Sensitivity as predictor
+LMPriceSensitivity<-lm(Satisfaction~PriceSensitivity,data=df)
+summary(LMPriceSensitivity)
+#0.007641272 
+#Linear Model with Airline Status Year of first flight as predictor
+LMFirstFlight<-lm(Satisfaction~YearofFirstFlight,data=df)
+summary(LMFirstFlight)
+#5.270168e-05 
+
 #Linear Model with Airline Status as predictor
 LMAirlineStatus<-lm(Satisfaction~AirlineStatus,data=df)
 summary(LMAirlineStatus)
