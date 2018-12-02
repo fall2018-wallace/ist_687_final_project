@@ -35,8 +35,10 @@ summary(LMTypeofTravel)
 LMShoppingAmountatAirport<-lm(Satisfaction~ShoppingAmountatAirport,data=df)
 summary(LMShoppingAmountatAirport)
 #0.0002999279 
-LM5<-lm(Satisfaction~Class,data=df)
-summary(LM5)
+
+#Linear Model with Class as predictor
+LMClass<-lm(Satisfaction~Class,data=df)
+summary(LMClass)
 #0.002526544
 LM5<-lm(Satisfaction~ScheduledDepartureHour,data=df)
 summary(LM5)
