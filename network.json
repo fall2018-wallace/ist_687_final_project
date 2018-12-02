@@ -26,17 +26,6 @@
                 }
             ],
             "source": "clean.R",
-            "target": "Model.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "df",
-                    "output": "df",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "clean.R",
             "target": "LinearModel.R"
         },
         {
@@ -70,6 +59,17 @@
             ],
             "source": "LinearModel.R",
             "target": "LinearModel2Plot.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "df",
+                    "output": "df",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "SelectDataSet.R",
+            "target": "Model.R"
         }
     ],
     "nodes": [
@@ -110,6 +110,6 @@
             "name": "LinearModel2Plot.png"
         }
     ],
-    "updated_at": "2018-12-02 19:13:49",
+    "updated_at": "2018-12-02 19:29:34",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
