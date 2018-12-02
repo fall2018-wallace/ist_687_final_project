@@ -28,6 +28,7 @@ summary(LMGender)
 LMPriceSensitivity<-lm(Satisfaction~PriceSensitivitys,data=df)
 summary(LMPriceSensitivity)
 
+#Linear Model with Airline Status Year of first flight as predictor
 LMFirstFlight<-lm(Satisfaction~YearofFirstFlight,data=df)
 summary(LMFirstFlight)
 
