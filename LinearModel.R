@@ -12,10 +12,11 @@ LM2<-lm(Satisfaction~AirlineStatus+Age+Gender+PriceSensitivity+YearofFirstFlight
 summary(LM2)
 
 #Below are Single linear regression models with only one variable with statistical significance
+#Linear Model with Airline Status as predictor
 LMAirlineStatus<-lm(Satisfaction~AirlineStatus,data=df)
 summary(LMAirlineStatus)
 
-
+#Linear Model with Age as predictor
 LMAge<-lm(Satisfaction~Age,data=df)
 summary(LMAge)
 
