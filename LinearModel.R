@@ -17,4 +17,5 @@ summary(LMAirlineStatus)
 
 
 LMAge<-lm(Satisfaction~Age,data=df)
+summary(LMAge)
 
