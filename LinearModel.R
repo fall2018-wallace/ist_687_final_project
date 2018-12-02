@@ -26,12 +26,14 @@ LMNoofFlightspa<-lm(Satisfaction~NoofFlightspa,data=df)
 summary(LMNoofFlightspa)
 #Adjusted R-squared:  0.05671105
 
-#Linear Model with TypeofTravel as predictor
+#Linear Model with Type of Travel as predictor
 LMTypeofTravel<-lm(Satisfaction~TypeofTravel,data=df)
 summary(LMTypeofTravel)
 #Adjusted R-squared:  0.3350338
-LM5<-lm(Satisfaction~ShoppingAmountatAirport,data=df)
-summary(LM5)
+
+#Linear Model with Shopping Amount at Airport as predictor
+LMShoppingAmountatAirport<-lm(Satisfaction~ShoppingAmountatAirport,data=df)
+summary(LMShoppingAmountatAirport)
 #0.0002999279 
 LM5<-lm(Satisfaction~Class,data=df)
 summary(LM5)
