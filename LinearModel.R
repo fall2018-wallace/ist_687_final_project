@@ -26,4 +26,5 @@ LMPriceSensitivity<-lm(Satisfaction~PriceSensitivitys,data=df)
 summary(LMPriceSensitivity)
 
 LMFirstFlight<-lm(Satisfaction~YearofFirstFlight,data=df)
+summary(LMFirstFlight)
 
