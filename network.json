@@ -81,6 +81,17 @@
             ],
             "source": "clean.R",
             "target": "SelectDataSet.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "df",
+                    "output": "df",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "LinearModel.R",
+            "target": "AssociationRule.R"
         }
     ],
     "nodes": [
@@ -133,6 +144,6 @@
             "task_status": "validating"
         }
     ],
-    "updated_at": "2018-12-02 18:37:00",
+    "updated_at": "2018-12-02 18:37:10",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
