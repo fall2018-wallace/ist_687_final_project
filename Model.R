@@ -11,7 +11,14 @@ testData <- df1[randIndex[(cutPoint2_3+1):dim(df1)[1]],]
 dim(testData)
 dim(trainData)
 library(kernlab)
-svmOutput <- ksvm(df.happy ~ df.Gender, data=trainData, kernel = "rbfdot",kpar="automatic",C=5,cross=3, prob.model=TRUE)
+svmOutput <- ksvm(df.happy ~ ., data=trainData, kernel = "rbfdot",kpar="automatic",C=5,cross=3, prob.model=TRUE)
+svmOutput <- ksvm(df.happy ~ df.TypeofTravel+df.AirlineStatus, data=trainData, kernel = "rbfdot",kpar="automatic",C=5,cross=3, prob.model=TRUE)
+svmOutput <- ksvm(df.happy ~ df.TypeofTravel+df.AirlineStatus+df.Age, data=trainData, kernel = "rbfdot",kpar="automatic",C=5,cross=3, prob.model=TRUE)
+svmOutput <- ksvm(df.happy ~ df.TypeofTravel+df.AirlineStatus+df.Age+df.Gender, data=trainData, kernel = "rbfdot",kpar="automatic",C=5,cross=3, prob.model=TRUE)
+svmOutput <- ksvm(df.happy ~ df.TypeofTravel+df.AirlineStatus+df.Age+df.Gender+df.PriceSensitivity, data=trainData, kernel = "rbfdot",kpar="automatic",C=5,cross=3, prob.model=TRUE)
+
+svmOutput <- ksvm(df.happy ~ ., data=trainData, kernel = "rbfdot",kpar="automatic",C=5,cross=3, prob.model=TRUE)
+svmOutput <- ksvm(df.happy ~ ., data=trainData, kernel = "rbfdot",kpar="automatic",C=1,cross=3, prob.model=TRUE)
 
 svmPred <- predict(svmOutput, testData, type = "votes")
 
