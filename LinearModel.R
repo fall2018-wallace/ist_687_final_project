@@ -39,7 +39,7 @@ summary(LMShoppingAmountatAirport)
 #Linear Model with Class as predictor
 LMClass<-lm(Satisfaction~Class,data=df)
 summary(LMClass)
-#0.002526544
+#Adjusted R-squared:  0.002526544
 
 #Linear Model with Scheduled Departure Hour as predictor
 LMScheduledDepartureHour<-lm(Satisfaction~ScheduledDepartureHour,data=df)
@@ -55,18 +55,22 @@ summary(LMArrivalDelaygreater5Mins)
 LMAirlineStatus<-lm(Satisfaction~AirlineStatus,data=df)
 summary(LMAirlineStatus)
 #Adjusted R-squared:  0.1184333 
+
 #Linear Model with Age as predictor
 LMAge<-lm(Satisfaction~Age,data=df)
 summary(LMAge)
 #Adjusted R-squared:  0.0492023
+
 #Linear Model with Gender as predictor
 LMGender<-lm(Satisfaction~Gender,data=df)
 summary(LMGender)
 #Adjusted R-squared:  0.01760919 
+
 #Linear Model with Price Sensitivity as predictor
 LMPriceSensitivity<-lm(Satisfaction~PriceSensitivity,data=df)
 summary(LMPriceSensitivity)
 #Adjusted R-squared:  0.007641272 
+
 #Linear Model with Airline Status Year of first flight as predictor
 LMFirstFlight<-lm(Satisfaction~YearofFirstFlight,data=df)
 summary(LMFirstFlight)
