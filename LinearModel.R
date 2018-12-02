@@ -23,4 +23,5 @@ LMGender<-lm(Satisfaction~Gender,data=df)
 summary(LMGender)
 
 LMPriceSensitivity<-lm(Satisfaction~PriceSensitivitys,data=df)
+summary(LMPriceSensitivity)
 
