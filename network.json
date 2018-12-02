@@ -42,17 +42,6 @@
         {
             "ports": [
                 {
-                    "input": "dfinsight",
-                    "output": "df",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "clean.R",
-            "target": "Insight.R"
-        },
-        {
-            "ports": [
-                {
                     "input": "df",
                     "output": "df",
                     "type": "r_obj"
@@ -123,14 +112,8 @@
             "desc": "",
             "name": "Insight1.R",
             "task_status": "in progress"
-        },
-        {
-            "assigned_to": "yzhong18",
-            "desc": "Generate multiple insights",
-            "name": "Insight.R",
-            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-12-02 18:43:08",
+    "updated_at": "2018-12-02 18:43:20",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
