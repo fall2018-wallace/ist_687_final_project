@@ -1,4 +1,5 @@
 
+str(df)
 df$happy<-df$Satisfaction
 df$happy[df$happy>=4]<-"happy"
 df$happy[df$happy<4]<-"unhappy"
