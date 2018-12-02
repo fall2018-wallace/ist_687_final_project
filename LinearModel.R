@@ -2,7 +2,7 @@
 summary(df)
 
 #Business Approach: --> For Anant
-# For the first model (LM1) we included all the variables for the entire data set and based on the p value that are statistically significant
+# For the first model (LM1) we included all the variables for the entire data set and based on the p value identified which variables are statistically significant
 # The second model (LM2) represents a linear regression model with only the variables that we observed to be statistically significant from model 1
 # In model 2 (lm2), there are 11 variables that are stastifically signifcant and have an impact on the overall customer Satisfaction
 # Because 11 variables is still a lot and we do not know which of the variables actually have the greatest impact on customers satsifaction, we decided to run single linear regression models and compare the s-quares of these  models
