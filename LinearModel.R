@@ -7,6 +7,7 @@ summary(df)
 # In model 2 (lm2), there are 11 variables that are stastifically signifcant and have an impact on the overall customer Satisfaction
 # Because 11 variables is still a lot and we do not know which of the variables actually have the greatest impact on customers satsifaction, we decided to run single linear regression models and compare the s-quares of these  models
 # Based on the single linear regression models, we noticed that type of travel and airline status have the greatest predicting power/impact on customer Satisfaction
+# Conclusion: There are 11 variables that are statistically significant. Those variables are included in linear model 2 (LM2).
 
 #Linear regression model will all the variables included in the entire dataset
 #Used the p value to cut out variables that are of no statistical value to further analysis
