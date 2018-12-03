@@ -26,7 +26,15 @@ df2<-df
 AgeGroups<-cut(df$Age, breaks=c(18, 24,30,36,42,48,54,60,66,72,78,84,90), right = FALSE)
 
 df2$Age<-AgeGroups
-AgeSat<-data.frame(table(df2$Age))
+#AgeSat<-data.frame(table(df2$Age))
+
+
+# plotting var charts
+CompOverallSat<-aggregate(fdf[, 1], list(fdf$AirlineName), mean)
+CompOverallSat<-data.frame(CompOverallSat)
+#CompOverallSat
+colnames(CompOverallSat) <- c("Airline", "AverageCustRating")
+
 
 plot1<-ggplot(AgeSat, aes(x=State, y=Flights)) + geom_bar(stat="identity",colour="white",
 fill="blue") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("State wise distribution
