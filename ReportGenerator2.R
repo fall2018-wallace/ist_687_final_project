@@ -14,5 +14,5 @@ CustPerCity
 
 
 x <- 'Day, Bobby Jean'
-gsub("(.*),.*", "\\1", x)
+gsub("(.*),*.", "\\1", x)
 
