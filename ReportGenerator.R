@@ -1,2 +1,2 @@
 
-str(fulldf)
+summary(fulldf)
