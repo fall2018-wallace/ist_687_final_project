@@ -27,7 +27,7 @@ AgeGroups<-cut(df$Age, breaks=c(18, 24,30,36,42,48,54,60,66,72,78,84,90), right 
 
 df2$Age<-AgeGroups
 
-AgeSat<-aggregate(AgeSat[, 1], list(AgeSat$Age), mean)
+AgeSat<-aggregate(df2[, 1], list(df2$Age), mean)
 AgeSat<-data.frame(AgeSat)
 #CompOverallSat
 colnames(AgeSat) <- c("Age", "AverageCustRating")
