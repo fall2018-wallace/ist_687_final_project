@@ -4,6 +4,7 @@ summary(df)
 
 df1<-df
 x1<-gsub('.*\\,', '', df1$OrginCity)
+df1$OrginCity<-x1
 CustPerCity<-data.frame(table(df1$OrginCity))
 # 
 # FEB. 2012 JAN. 2012 MAR. 2012 
