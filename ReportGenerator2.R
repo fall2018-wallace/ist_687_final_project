@@ -1,5 +1,9 @@
 
 #Plotting number of customers 
 summary(df)
+table(mydf$MONTH.YEAR)
+# 
+# FEB. 2012 JAN. 2012 MAR. 2012 
+#         2         2         1
 
-CompOverallSat<-aggregate(fdf[, 1], list(fdf$AirlineName), count)
+data.frame(table(mydf$MONTH.YEAR))
