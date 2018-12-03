@@ -122,6 +122,16 @@
             ],
             "source": "ReportGenerator2.R",
             "target": "TravelorsPerCity.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plot2",
+                    "type": "png"
+                }
+            ],
+            "source": "ReportGenerator2.R",
+            "target": "AgeCustSat.png"
         }
     ],
     "nodes": [
@@ -186,6 +196,6 @@
             "name": "AgeCustSat.png"
         }
     ],
-    "updated_at": "2018-12-03 23:45:56",
+    "updated_at": "2018-12-03 23:46:08",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
