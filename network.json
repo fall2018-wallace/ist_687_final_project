@@ -151,8 +151,12 @@
             "desc": "Graphs and others on overall data",
             "name": "ReportGenerator.R",
             "task_status": "in progress"
+        },
+        {
+            "desc": "Reports for our client",
+            "name": "ReportGenerator2.R"
         }
     ],
-    "updated_at": "2018-12-03 17:50:54",
+    "updated_at": "2018-12-03 17:51:15",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
