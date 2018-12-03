@@ -2,13 +2,14 @@
 #Plotting number of customers 
 summary(df)
 
-CustPerCity<-data.frame(table(df$OrginCity))
+df1<-df
+CustPerCity<-data.frame(table(df1$OrginCity))
 # 
 # FEB. 2012 JAN. 2012 MAR. 2012 
 #         2         2         1
 CustPerCity
 colnames(CustPerCity) <- c("State", "Flights")
-gsub('.*\\,', '', CustPerCity$State)
+
 
 #gsub("(.*),.*", "\\1", x)
 
