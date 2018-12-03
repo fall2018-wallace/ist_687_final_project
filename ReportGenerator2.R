@@ -11,9 +11,13 @@ colnames(CustPerCity) <- c("City", "Flights")
 
 #gsub("(.*),.*", "\\1", x)
 
-plot1<-ggplot(CompOverallSat, aes(x=Airline, y=AverageCustRating)) + geom_bar(stat="identity") + theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+library(ggplot2)
+
+CustPerCity$City <- factor(CustPerCity$City, levels = CustPerCity$City[order(CustPerCity$Flights)])
+
+plot1<-ggplot(CustPerCity, aes(x=City, y=Flights)) + geom_bar(stat="identity") + theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
 
 
-x <- 'Day, Bobby Jean'
-gsub("(.*),.*", "\\1", x)
+#x <- 'Day, Bobby Jean'
+#gsub("(.*),.*", "\\1", x)
 
