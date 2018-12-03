@@ -26,18 +26,10 @@ df2<-df
 AgeGroups<-cut(df$Age, breaks=c(18, 24,30,36,42,48,54,60,66,72,78,84,90), right = FALSE)
 
 df2$Age<-AgeGroups
-#AgeSat<-data.frame(table(df2$Age))
+AgeSat<-data.frame(table(df2$Age))
 
-
-# plotting var charts
-AgeSat<-aggregate(AgeSat[, 1], list(AgeSat$Age), mean)
-AgeSat<-data.frame(AgeSat)
-#CompOverallSat
-colnames(AgeSat) <- c("AgeGroup", "AverageCustRating")
-
-
-plot1<-ggplot(AgeSat, aes(x=AgeGroup, y=AverageCustRating)) + geom_bar(stat="identity",colour="white",
-fill="blue") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("Age wise average of Customer Satisfaction")+theme(plot.title= element_text(hjust=0.5)) 
+plot2<-ggplot(AgeSat, aes(x=State, y=Flights)) + geom_bar(stat="identity",colour="white",
+fill="blue") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("Age wise average Customer Satisfaction")+theme(plot.title= element_text(hjust=0.5)) 
 
 
 
