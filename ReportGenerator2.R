@@ -30,10 +30,10 @@ df2$Age<-AgeGroups
 
 
 # plotting var charts
-CompOverallSat<-aggregate(fdf[, 1], list(fdf$AirlineName), mean)
-CompOverallSat<-data.frame(CompOverallSat)
+AgeSat<-aggregate(AgeSat[, 1], list(AgeSat$Age), mean)
+AgeSat<-data.frame(AgeSat)
 #CompOverallSat
-colnames(CompOverallSat) <- c("Airline", "AverageCustRating")
+colnames(AgeSat) <- c("AgeGroup", "AverageCustRating")
 
 
 plot1<-ggplot(AgeSat, aes(x=State, y=Flights)) + geom_bar(stat="identity",colour="white",
