@@ -29,6 +29,7 @@ df2$Age<-AgeGroups
 
 AgeSat<-aggregate(df2[, 1], list(df2$Age), mean)
 AgeSat<-data.frame(AgeSat)
+AgeSat
 #CompOverallSat
 colnames(AgeSat) <- c("Age", "AverageCustRating")
 
