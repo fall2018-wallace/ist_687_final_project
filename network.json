@@ -78,7 +78,7 @@
                     "type": "png"
                 }
             ],
-            "source": "ReportGenerator.R",
+            "source": "ReportGenerator1.R",
             "target": "BarPlotCustSat.png"
         },
         {
@@ -88,7 +88,7 @@
                     "type": "png"
                 }
             ],
-            "source": "ReportGenerator.R",
+            "source": "ReportGenerator1.R",
             "target": "BarPlotCustSat2.png"
         },
         {
@@ -100,7 +100,7 @@
                 }
             ],
             "source": "SelectDataSet.R",
-            "target": "ReportGenerator.R"
+            "target": "ReportGenerator1.R"
         },
         {
             "ports": [
@@ -158,16 +158,16 @@
             "name": "BarPlotCustSat2.png"
         },
         {
-            "assigned_to": "mfurtado",
-            "desc": "Graphs and others on overall data",
-            "name": "ReportGenerator.R",
-            "task_status": "in progress"
-        },
-        {
             "desc": "Reports for our client",
             "name": "ReportGenerator2.R"
+        },
+        {
+            "assigned_to": "mfurtado",
+            "desc": "Graphs and others on overall data",
+            "name": "ReportGenerator1.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-12-03 17:51:25",
+    "updated_at": "2018-12-03 17:52:00",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
