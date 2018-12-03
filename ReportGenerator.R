@@ -1,3 +1,5 @@
 
 summary(fulldf)
-aggregate(d[, 3:4], list(d$Name), mean)
+
+
+CompOverallSat<-aggregate(fulldf[, 1], list(fulldf$AirlineName), mean)
