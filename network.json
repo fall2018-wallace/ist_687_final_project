@@ -97,11 +97,6 @@
                     "input": "fulldf",
                     "output": "fulldf",
                     "type": "r_obj"
-                },
-                {
-                    "input": "df",
-                    "output": "df",
-                    "type": "r_obj"
                 }
             ],
             "source": "SelectDataSet.R",
@@ -158,6 +153,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-12-03 17:49:42",
+    "updated_at": "2018-12-03 17:50:54",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
