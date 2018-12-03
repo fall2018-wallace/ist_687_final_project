@@ -138,8 +138,11 @@
         },
         {
             "name": "BarPlotCustSat.png"
+        },
+        {
+            "name": "BarPlotCustSat2.png"
         }
     ],
-    "updated_at": "2018-12-03 17:12:17",
+    "updated_at": "2018-12-03 17:30:54",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
