@@ -91,6 +91,16 @@
             ],
             "source": "SelectDataSet.R",
             "target": "ReportGenerator.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plot2",
+                    "type": "png"
+                }
+            ],
+            "source": "ReportGenerator.R",
+            "target": "BarPlotCustSat2.png"
         }
     ],
     "nodes": [
@@ -143,6 +153,6 @@
             "name": "BarPlotCustSat2.png"
         }
     ],
-    "updated_at": "2018-12-03 17:30:54",
+    "updated_at": "2018-12-03 17:31:06",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
