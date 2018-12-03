@@ -1,6 +1,6 @@
 
 #summary(df)
-
+fulldf<-df
 
 #Custdf<-subset(df,AirlineName=="Southeast")
 Custdf<-df[df$AirlineName == 'Southeast Airlines Co. ',]
