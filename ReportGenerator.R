@@ -14,6 +14,6 @@ CompOverallSat
 
 plot1<-ggplot(CompOverallSat, aes(x=Airline, y=AverageCustRating)) + geom_bar(stat="identity") + theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
 
-CompOverallSat <- CompOverallSat[order(AverageCustRating),] 
+CompOverallSat <- CompOverallSat[order(CompOverallSat$AverageCustRating),] 
 plot2<-ggplot(CompOverallSat, aes(x=Airline, y=AverageCustRating)) + geom_bar(stat="identity") + theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
 
