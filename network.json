@@ -158,16 +158,21 @@
             "name": "BarPlotCustSat2.png"
         },
         {
+            "assigned_to": "mfurtado",
             "desc": "Reports for our client",
-            "name": "ReportGenerator2.R"
+            "name": "ReportGenerator2.R",
+            "task_status": "in progress"
         },
         {
             "assigned_to": "mfurtado",
             "desc": "Graphs and others on overall data",
             "name": "ReportGenerator1.R",
             "task_status": "in progress"
+        },
+        {
+            "name": "TravelorsPerCity.png"
         }
     ],
-    "updated_at": "2018-12-03 17:52:00",
+    "updated_at": "2018-12-03 18:11:46",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
