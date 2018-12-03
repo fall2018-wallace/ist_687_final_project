@@ -141,18 +141,18 @@
             "name": "LinearModel2Plot.png"
         },
         {
-            "assigned_to": "mfurtado",
-            "desc": "Graphs and other ",
-            "name": "ReportGenerator.R",
-            "task_status": "in progress"
-        },
-        {
             "name": "BarPlotCustSat.png"
         },
         {
             "name": "BarPlotCustSat2.png"
+        },
+        {
+            "assigned_to": "mfurtado",
+            "desc": "Graphs and others on overall data",
+            "name": "ReportGenerator.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-12-03 17:31:06",
+    "updated_at": "2018-12-03 17:39:19",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
