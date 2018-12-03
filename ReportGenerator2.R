@@ -6,10 +6,7 @@ df1<-df
 x1<-gsub('.*\\,', '', df1$OrginCity)
 df1$OrginCity<-x1
 CustPerCity<-data.frame(table(df1$OrginCity))
-# 
-# FEB. 2012 JAN. 2012 MAR. 2012 
-#         2         2         1
-CustPerCity
+
 colnames(CustPerCity) <- c("State", "Flights")
 
 
@@ -24,6 +21,4 @@ fill="palevioletred3") +theme(axis.text.x = element_text(angle = 90, hjust = 1))
 of flights taken")+theme(plot.title= element_text(hjust=0.5))
 plot1
 
-#x <- 'Day, Bobby Jean'
-#gsub('.*\\,', '', x)
-
+#Customer Satisfaction based on age 
