@@ -8,4 +8,10 @@ CustPerCity<-data.frame(table(df$OrginCity))
 #         2         2         1
 CustPerCity
 
+gsub("(.*),.*", "\\1", x)
+
+
+
+
+x <- 'Day, Bobby Jean'gsub("(.*),.*", "\\1", x)
 
