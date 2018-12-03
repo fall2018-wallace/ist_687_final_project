@@ -36,9 +36,8 @@ AgeSat<-data.frame(AgeSat)
 colnames(AgeSat) <- c("AgeGroup", "AverageCustRating")
 
 
-plot1<-ggplot(AgeSat, aes(x=State, y=Flights)) + geom_bar(stat="identity",colour="white",
-fill="blue") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("State wise distribution
-of flights taken")+theme(plot.title= element_text(hjust=0.5)) 
+plot1<-ggplot(AgeSat, aes(x=AgeGroup, y=AverageCustRating)) + geom_bar(stat="identity",colour="white",
+fill="blue") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("Age wise average of Customer Satisfaction")+theme(plot.title= element_text(hjust=0.5)) 
 
 
 
