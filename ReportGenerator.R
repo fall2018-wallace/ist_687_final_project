@@ -12,4 +12,4 @@ library(ggplot2)
 
 
 
-plot1<-ggplot(CompOverallSat)
+plot1<-ggplot(CompOverallSat, aes(x=Airline, y=AverageCustRating)) + geom_bar(stat="identity") 
