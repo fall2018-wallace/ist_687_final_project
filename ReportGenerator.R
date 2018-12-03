@@ -23,5 +23,4 @@ plot2<-ggplot(CompOverallSat, aes(x=Airline, y=AverageCustRating)) + geom_bar(st
 
 
 
-#Plotting number of customers 
-summary(df)
+
