@@ -8,7 +8,7 @@ CustPerCity<-data.frame(table(df$OrginCity))
 #         2         2         1
 CustPerCity
 
-gsub("(.*),.*", "\\1", x)
+#gsub("(.*),.*", "\\1", x)
 
 
 
