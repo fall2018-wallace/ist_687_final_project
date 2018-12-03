@@ -13,5 +13,6 @@ gsub("(.*),.*", "\\1", x)
 
 
 
-x <- 'Day, Bobby Jean'gsub("(.*),.*", "\\1", x)
+x <- 'Day, Bobby Jean'
+gsub("(.*),.*", "\\1", x)
 
