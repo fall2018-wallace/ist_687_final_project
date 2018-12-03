@@ -28,4 +28,9 @@ AgeGroups<-cut(df$Age, breaks=c(18, 24,30,36,42,48,54,60,66,72,78,84,90), right 
 df2$Age<-AgeGroups
 AgeSat<-data.frame(table(df2$Age))
 
+plot1<-ggplot(AgeSat, aes(x=State, y=Flights)) + geom_bar(stat="identity",colour="white",
+fill="blue") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("State wise distribution
+of flights taken")+theme(plot.title= element_text(hjust=0.5)) 
+
+
 
