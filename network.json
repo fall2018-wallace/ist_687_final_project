@@ -84,23 +84,28 @@
         {
             "ports": [
                 {
-                    "input": "fulldf",
-                    "output": "fulldf",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "SelectDataSet.R",
-            "target": "ReportGenerator.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "plot2",
                     "type": "png"
                 }
             ],
             "source": "ReportGenerator.R",
             "target": "BarPlotCustSat2.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "fulldf",
+                    "output": "fulldf",
+                    "type": "r_obj"
+                },
+                {
+                    "input": "df",
+                    "output": "df",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "SelectDataSet.R",
+            "target": "ReportGenerator.R"
         }
     ],
     "nodes": [
@@ -153,6 +158,6 @@
             "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-12-03 17:39:19",
+    "updated_at": "2018-12-03 17:49:42",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
