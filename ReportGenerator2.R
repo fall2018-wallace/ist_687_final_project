@@ -22,3 +22,5 @@ of flights taken")+theme(plot.title= element_text(hjust=0.5))
 plot1
 
 #Customer Satisfaction based on age 
+df2<-df
+cut(df$Age, breaks=c(18, 24,30,36,42,48,54,60,66,72,78,84,90), right = FALSE)
