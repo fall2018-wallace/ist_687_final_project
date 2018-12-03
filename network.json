@@ -70,6 +70,22 @@
             ],
             "source": "SelectDataSet.R",
             "target": "Model.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "df",
+                    "output": "df",
+                    "type": "r_obj"
+                },
+                {
+                    "input": "fulldf",
+                    "output": "fulldf",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "SelectDataSet.R",
+            "target": "ReportGenerator.R"
         }
     ],
     "nodes": [
@@ -114,6 +130,6 @@
             "name": "ReportGenerator.R"
         }
     ],
-    "updated_at": "2018-12-03 16:50:32",
+    "updated_at": "2018-12-03 16:50:53",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
