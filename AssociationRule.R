@@ -31,6 +31,10 @@ hotelSurveyruleDFSE<-as(ruleDFSE,"transactions")
 rulesetsoutheastH<- apriori(hotelSurveyruleDFSE, parameter=list(support=0.05, confidence=0.8),appearance = list(default="lhs", rhs=("Satisfaction=High")))
 
 goodrulesH<-sort(rulesetsoutheastH,by="lift")[1:5]
-plot(goodrulesH, method = "graph", engine = "htmlwidget")
+plot1<-plot(goodrulesH, method = "graph", engine = "htmlwidget")
 
 rulesetsoutheastL<- apriori(hotelSurveyruleDFSE, parameter=list(support=0.05, confidence=0.5),appearance = list(default="lhs", rhs=("Satisfaction=Low")))
+
+
+goodrules2<-sort(rulesetsoutheastL,by="lift")[1:10]
+plot2<-plot(goodrules2, method = "graph", engine = "htmlwidget")
