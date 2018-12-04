@@ -132,6 +132,16 @@
             ],
             "source": "ReportGenerator2.R",
             "target": "AgeCustSat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "port3",
+                    "type": "png"
+                }
+            ],
+            "source": "ReportGenerator2.R",
+            "target": "GenderCustomers.png"
         }
     ],
     "nodes": [
@@ -199,6 +209,6 @@
             "name": "GenderCustomers.png"
         }
     ],
-    "updated_at": "2018-12-04 01:33:54",
+    "updated_at": "2018-12-04 01:34:09",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
