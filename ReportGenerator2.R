@@ -71,3 +71,7 @@ AirStatAnalysis
 plot4<-ggplot(countvar, aes(x=AirlineStatus, y=AverageCustRating)) + 
 geom_text(aes(label=AverageCustRating), vjust=-1.0) + 
 geom_bar(stat="identity",colour="white",fill="lightseagreen") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("Gender wise Customers")
+
+#Status left
+
+
