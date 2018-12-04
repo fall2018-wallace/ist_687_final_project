@@ -31,7 +31,7 @@ AgeGroups<-gsub('\\)', '', AgeGroups)
 
 df2$Age<-AgeGroups
 
-cts<-aggregate(Age,FUN=length,data=df2)
+cts<-aggregate(df2$Age,FUN=length,data=df2)
 cts
 AgeSat<-aggregate(df2[, 1], list(df2$Age), mean)
 
