@@ -1,4 +1,5 @@
 
+summary(df)
 createBuckets<- function(vec){
   q <- quantile(vec, c(0.4, 0.6))
   vBuckets <- replicate(length(vec), "Average")
