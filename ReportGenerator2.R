@@ -78,5 +78,5 @@ geom_bar(stat="identity",colour="white",fill="lightseagreen") +theme(axis.text.x
 
 
 grouped_data <- aggregate(df, by=list(df$AirlineStatus, df$Satisfaction), FUN=length);
-
+grouped_data
 
