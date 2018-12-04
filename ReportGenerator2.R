@@ -56,6 +56,7 @@ plot2<-ggplot(AgeSat, aes(x=Age, y=AverageCustRating, label=CountOfFlights)) + g
 
 # Gender plot
 countvar<-data.frame(table(df$Gender))
+colnames(countvar) <- c("Gender", "NoOfTravelers")
 countvar
-plot2<-ggplot(countvar, aes(x=Age, y=AverageCustRating, label=CountOfFlights)) + geom_text(aes(label=CountOfFlights), vjust=-1.0) + geom_bar(stat="identity",colour="white",fill="blue") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("Age wise average Customer Satisfaction") + theme(plot.title= element_text(hjust=0.5)) 
+plot2<-ggplot(countvar, aes(x=Gender, y=NoOfTravelers)) + geom_text(aes(label=NoOfTravelers), vjust=-1.0) + geom_bar(stat="identity",colour="white",fill="lightseagreen") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("Gender wise Customers") + theme(plot.title= element_text(hjust=0.5)) 
 
