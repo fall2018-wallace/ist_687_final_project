@@ -66,4 +66,4 @@ df1$OrginCity<-x1
 SatState<-aggregate(df1[, 1], list(df1$OrginCity), mean)
 SatState
 
-colnames(CustPerCity) <- c("State", "Flights")
+#colnames(CustPerCity) <- c("State", "Flights")
