@@ -77,6 +77,6 @@ plot4<-ggplot(grouped_data, aes(factor(Satisfaction), NoOfTravelers, fill = Airl
 
 #Type of travel
 
-sat<-dt[,.(avg=mean(Satisfaction), .N), by=TypeofTravel]
+TypeTravel<-aggregate(df[, 1], list(df2$TypeofTravel), mean)
 
 
