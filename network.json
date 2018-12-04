@@ -53,17 +53,6 @@
         {
             "ports": [
                 {
-                    "input": "df",
-                    "output": "df",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "SelectDataSet.R",
-            "target": "Model.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "plot1",
                     "type": "png"
                 }
@@ -160,12 +149,6 @@
         },
         {
             "assigned_to": "mfurtado",
-            "desc": "",
-            "name": "Model.R",
-            "task_status": "in progress"
-        },
-        {
-            "assigned_to": "mfurtado",
             "desc": "The Client can be changed here, kept separate for convenience",
             "name": "SelectDataSet.R",
             "task_status": "in progress"
@@ -222,6 +205,6 @@
             "name": "TypeTravel.png"
         }
     ],
-    "updated_at": "2018-12-04 04:04:47",
+    "updated_at": "2018-12-04 04:05:02",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
