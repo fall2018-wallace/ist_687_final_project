@@ -26,7 +26,7 @@ scheduleddeparturehour<-createBuckets(df$ScheduledDepartureHour)
 
 ruleDF<- data.frame(Satisfaction,df$AirlineStatus,age,df$Gender,pricesensitive,yearoffirstflight,noofflightspa,df$TypeofTravel,shoppingamount,df$Class,scheduleddeparturehour,df$ArrivalDelaygreater5Mins)
 #ruleDF<- data.frame(Satisfaction,df$AirlineStatus,age,df$Gender,pricesensitive,yearoffirstflight,noofflightspa,df$TypeofTravel,shoppingamount,df$Class,scheduleddeparturehour,df$ArrivalDelaygreater5Mins)
-hotelSurveyruleDFSE<-as(ruleDFSE,"transactions")
+hotelSurveyruleDFSE<-ruleDF #as(ruleDFSE,"transactions")
 
 rulesetsoutheastH<- apriori(hotelSurveyruleDFSE, parameter=list(support=0.05, confidence=0.8),appearance = list(default="lhs", rhs=("Satisfaction=High")))
 
