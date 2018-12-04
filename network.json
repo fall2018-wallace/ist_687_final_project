@@ -70,6 +70,78 @@
             ],
             "source": "SelectDataSet.R",
             "target": "Model.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plot1",
+                    "type": "png"
+                }
+            ],
+            "source": "ReportGenerator1.R",
+            "target": "BarPlotCustSat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plot2",
+                    "type": "png"
+                }
+            ],
+            "source": "ReportGenerator1.R",
+            "target": "BarPlotCustSat2.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "fulldf",
+                    "output": "fulldf",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "SelectDataSet.R",
+            "target": "ReportGenerator1.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "df",
+                    "output": "df",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "SelectDataSet.R",
+            "target": "ReportGenerator2.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plot1",
+                    "type": "png"
+                }
+            ],
+            "source": "ReportGenerator2.R",
+            "target": "TravelorsPerCity.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plot2",
+                    "type": "png"
+                }
+            ],
+            "source": "ReportGenerator2.R",
+            "target": "AgeCustSat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plot3",
+                    "type": "png"
+                }
+            ],
+            "source": "ReportGenerator2.R",
+            "target": "GenderCustomers.png"
         }
     ],
     "nodes": [
@@ -108,8 +180,35 @@
         },
         {
             "name": "LinearModel2Plot.png"
+        },
+        {
+            "name": "BarPlotCustSat.png"
+        },
+        {
+            "name": "BarPlotCustSat2.png"
+        },
+        {
+            "assigned_to": "mfurtado",
+            "desc": "Reports for our client",
+            "name": "ReportGenerator2.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "mfurtado",
+            "desc": "Graphs and others on overall data",
+            "name": "ReportGenerator1.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "TravelorsPerCity.png"
+        },
+        {
+            "name": "AgeCustSat.png"
+        },
+        {
+            "name": "GenderCustomers.png"
         }
     ],
-    "updated_at": "2018-12-02 19:29:34",
+    "updated_at": "2018-12-04 01:34:48",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
