@@ -41,7 +41,7 @@ colnames(countvar) <- c("Age", "CountOfFlights")
 AgeSat<-aggregate(df2[, 1], list(df2$Age), mean)
 
 AgeSat<-data.frame(AgeSat)
-AgeSat<-merge(x = AgeSat, y = countvar, by = "Age", all = TRUE)
+
 
 #CompOverallSat
 colnames(AgeSat) <- c("Age", "AverageCustRating")
