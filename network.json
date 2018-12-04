@@ -142,6 +142,16 @@
             ],
             "source": "ReportGenerator2.R",
             "target": "GenderCustomers.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plot4",
+                    "type": "png"
+                }
+            ],
+            "source": "SelectDataSet.R",
+            "target": "AirStatus.png"
         }
     ],
     "nodes": [
@@ -212,6 +222,6 @@
             "name": "AirStatus.png"
         }
     ],
-    "updated_at": "2018-12-04 02:20:25",
+    "updated_at": "2018-12-04 02:20:33",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
