@@ -23,19 +23,19 @@ scheduleddeparturehour<-createBuckets(df$ScheduledDepartureHour)
 library(arules)
 library(arulesViz)
 
-ruleDF<- data.frame(Satisfaction,df$AirlineStatus,age,df$Gender,pricesensitive,yearoffirstflight,noofflightspa,df$TypeofTravel,shoppingamount,df$Class,scheduleddeparturehour,df$ArrivalDelaygreater5Mins)
+#ruleDF<- data.frame(Satisfaction,df$AirlineStatus,age,df$Gender,pricesensitive,yearoffirstflight,noofflightspa,df$TypeofTravel,shoppingamount,df$Class,scheduleddeparturehour,df$ArrivalDelaygreater5Mins)
 
-hotelSurveyrule<-as(ruleDF,"transactions")
-ruleH<- apriori(hotelSurveyrule, parameter=list(support=0.05, confidence=0.5),appearance = list(default="lhs", rhs=("Satisfaction=High")))
-inspect(ruleH)
-plot(ruleH)
+#hotelSurveyrule<-as(ruleDF,"transactions")
+#ruleH<- apriori(hotelSurveyrule, parameter=list(support=0.05, confidence=0.5),appearance = list(default="lhs", rhs=("Satisfaction=High")))
+#inspect(ruleH)
+#plot(ruleH)
 
-ruleL<- apriori(hotelSurveyruleDFSE, parameter=list(support=0.01, confidence=0.9),appearance = list(default="lhs", rhs=("Satisfaction=Low")))
-inspect(ruleL)
-plot(ruleL)
+#ruleL<- apriori(hotelSurveyruleDFSE, parameter=list(support=0.01, confidence=0.9),appearance = list(default="lhs", rhs=("Satisfaction=Low")))
+#inspect(ruleL)
+#plot(ruleL)
 
-goodrules1<-sort(ruleH,by="lift")[1:10]
-inspect(goodrules1)
+#goodrules1<-sort(ruleH,by="lift")[1:10]
+#inspect(goodrules1)
 
-goodrules2<-sort(ruleL,by="lift")[1:10]
-inspect(goodrules2)
+#goodrules2<-sort(ruleL,by="lift")[1:10]
+#inspect(goodrules2)
