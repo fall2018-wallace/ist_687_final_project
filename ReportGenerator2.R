@@ -27,7 +27,7 @@ AgeGroups<-cut(df$Age, breaks=c(18, 24,30,36,42,48,54,60,66,72,78,84,90), right 
 AgeGroups
 AgeGroups<-gsub(',', '-', AgeGroups)
 AgeGroups<-gsub('[', '', AgeGroups)
-AgeGroups<-gsub(')', '', AgeGroups)
+AgeGroups<-gsub('//)', '', AgeGroups)
 df2$Age<-AgeGroups
 
 AgeSat<-aggregate(df2[, 1], list(df2$Age), mean)
