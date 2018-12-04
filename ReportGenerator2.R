@@ -62,4 +62,8 @@ plot3<-ggplot(countvar, aes(x=Gender, y=NoOfTravelers)) + geom_text(aes(label=No
 
 
 
+
 # Airline Status and Type of travel
+AirStatAnalysis<-aggregate(df[, 1], list(df$AirlineStatus), mean)
+AirStatAnalysis
+colnames(AirStatAnalysis) <- c("AirlineStatus", "AverageCustRating")
