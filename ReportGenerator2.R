@@ -82,4 +82,6 @@ grouped_data <-grouped_data[,c(1:3)]
 #grouped_data
 colnames(grouped_data) <- c("AirlineStatus", "Satisfaction","NoOfTravelers")
 grouped_data
-
+ggplot(df, aes(factor(V1), V3, fill = V2)) + 
+        geom_bar(stat = "identity", width = 0.2, position = "dodge") +
+        labs(list(x = "x", y = "count",fill = "group"))
