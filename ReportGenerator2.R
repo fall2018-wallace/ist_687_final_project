@@ -1,6 +1,7 @@
 
 #Plotting number of customers 
 summary(df)
+str(df)
 
 df1<-df
 x1<-gsub('.*\\,', '', df1$OrginCity)
