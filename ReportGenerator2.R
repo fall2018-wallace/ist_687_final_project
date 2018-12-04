@@ -80,7 +80,9 @@ plot4<-ggplot(grouped_data, aes(factor(Satisfaction), NoOfTravelers, fill = Airl
 TypeTravel<-aggregate(df[, 1], list(df2$TypeofTravel), mean)
 colnames(TypeTravel) <- c("TypeOfTravel", "AverageSatisfaction")
 TypeTravel1<-data.frame(table(df$TypeofTravel))
-colnames(TypeTravel1) <- c("TypeOfTravel", "CountOfCustomers")
+colnames(TypeTravel1) <- c("TypeOfTravel", "NoOfCustomers")
 TypeTrav<-merge(x = TypeTravel, y = TypeTravel1, by = "TypeOfTravel", all = TRUE)
 TypeTrav
+
+plot5<-ggplot(TypeTrav, aes(x=TypeOfTravel, y=AverageSatisfaction)) + geom_text(aes(label=CountOfCustomers), vjust=-1.0) + geom_bar(stat="identity",colour="white",fill="grey") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("Customer Satisfaction based on Type of Travel") + theme(plot.title= element_text(hjust=0.5)) 
 
