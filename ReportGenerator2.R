@@ -35,6 +35,7 @@ df2$Age<-AgeGroups
 
 countvar<-data.frame(table(df2$Age))
 countvar
+colnames(countvar) <- c("Age", "CountOfFlights")
 AgeSat<-aggregate(df2[, 1], list(df2$Age), mean)
 
 AgeSat<-data.frame(AgeSat)
