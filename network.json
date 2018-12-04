@@ -53,16 +53,6 @@
         {
             "ports": [
                 {
-                    "output": "plotLM2",
-                    "type": "png"
-                }
-            ],
-            "source": "LinearModel.R",
-            "target": "LinearModel2Plot.png"
-        },
-        {
-            "ports": [
-                {
                     "input": "df",
                     "output": "df",
                     "type": "r_obj"
@@ -199,9 +189,6 @@
             "task_status": "validating"
         },
         {
-            "name": "LinearModel2Plot.png"
-        },
-        {
             "name": "BarPlotCustSat.png"
         },
         {
@@ -235,6 +222,6 @@
             "name": "TypeTravel.png"
         }
     ],
-    "updated_at": "2018-12-04 03:36:02",
+    "updated_at": "2018-12-04 04:04:47",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
