@@ -63,7 +63,7 @@ plot3<-ggplot(countvar, aes(x=Gender, y=NoOfTravelers)) + geom_text(aes(label=No
 
 
 
-# Airline Status and Type of travel
+# Airline Status 
 
 grouped_data <- aggregate(df, by=list(df$AirlineStatus, df$Satisfaction), FUN=length);
 grouped_data <-grouped_data[,c(1:3)]
@@ -72,3 +72,7 @@ colnames(grouped_data) <- c("AirlineStatus", "Satisfaction","NoOfTravelers")
 grouped_data
 
 plot4<-ggplot(grouped_data, aes(factor(Satisfaction), NoOfTravelers, fill = AirlineStatus)) +        geom_bar(stat = "identity", width = 0.2, position = "dodge") +   labs(list(x = "Satisfaction", y = "Number of Travellers",fill = "group"))
+
+
+
+#Type of travel
