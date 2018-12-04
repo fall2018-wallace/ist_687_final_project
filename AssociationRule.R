@@ -25,8 +25,8 @@ library(arules)
 library(arulesViz)
 
 ruleDF<- data.frame(Satisfaction,df$AirlineStatus,age,df$Gender,pricesensitive,yearoffirstflight,noofflightspa,df$TypeofTravel,shoppingamount,df$Class,scheduleddeparturehour,df$ArrivalDelaygreater5Mins)
-
-#hotelSurveyrule<-as(ruleDF,"transactions")
+#ruleDF<- data.frame(Satisfaction,df$AirlineStatus,age,df$Gender,pricesensitive,yearoffirstflight,noofflightspa,df$TypeofTravel,shoppingamount,df$Class,scheduleddeparturehour,df$ArrivalDelaygreater5Mins)
+hotelSurveyrule<-as(ruleDF,"transactions")
 ruleH<- apriori(hotelSurveyrule, parameter=list(support=0.05, confidence=0.5),appearance = list(default="lhs", rhs=("Satisfaction=High")))
 inspect(ruleH)
 plot(ruleH)
