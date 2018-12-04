@@ -65,8 +65,7 @@ df1$OrginCity<-x1
 #CustPerCity<-data.frame(table(df1$OrginCity))
 SatState<-aggregate(df1[, 1], list(df1$OrginCity), mean)
 str(SatState)
-colnames(SatState)<-c("state","sat")
-str(SatState)
-g<-ggplot(SatState,aes(x=state,y=sat))+geom_bar()
+
+g<-ggplot(SatState,aes(x=Group.1,y=x))+geom_bar()
 g
 #colnames(CustPerCity) <- c("State", "Flights")
