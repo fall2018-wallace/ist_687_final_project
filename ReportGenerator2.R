@@ -69,6 +69,7 @@ str(SatState)
 SatState
 StateNames<-SatState$state
 row.names(SatState) <- NULL
+-SatState$state <- NULL
 g<-ggplot(SatState,aes(x=sat,y=state))+geom_bar()
 g
 #colnames(CustPerCity) <- c("State", "Flights")
