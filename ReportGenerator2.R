@@ -53,3 +53,6 @@ plot2<-ggplot(AgeSat, aes(x=Age, y=AverageCustRating, label=CountOfFlights)) + g
 #plot2
 
 
+
+# Gender plot2
+
