@@ -64,5 +64,6 @@ x1<-gsub('.*\\,', '', df1$OrginCity)
 df1$OrginCity<-x1
 #CustPerCity<-data.frame(table(df1$OrginCity))
 SatState<-aggregate(df1[, 1], list(df1$OrginCity), mean)
+SatState
 
 colnames(CustPerCity) <- c("State", "Flights")
