@@ -56,5 +56,5 @@ plot2<-ggplot(AgeSat, aes(x=Age, y=AverageCustRating, label=CountOfFlights)) + g
 
 # Gender plot
 countvar<-data.frame(table(df$Gender))
-
+countvar
 
