@@ -140,6 +140,16 @@
             ],
             "source": "AssociationRule.R",
             "target": "aproiri1.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plot2",
+                    "type": "png"
+                }
+            ],
+            "source": "AssociationRule.R",
+            "target": "aproiri2.png"
         }
     ],
     "nodes": [
@@ -204,6 +214,6 @@
             "name": "aproiri2.png"
         }
     ],
-    "updated_at": "2018-12-04 04:19:42",
+    "updated_at": "2018-12-04 04:19:50",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
