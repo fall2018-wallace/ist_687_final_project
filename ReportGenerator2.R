@@ -1,6 +1,6 @@
 
 #Plotting number of customers 
-summary(df)
+#summary(df)
 
 df1<-df
 x1<-gsub('.*\\,', '', df1$OrginCity)
@@ -24,7 +24,7 @@ of flights taken")+theme(plot.title= element_text(hjust=0.5))
 #Customer Satisfaction based on age 
 df2<-df
 AgeGroups<-cut(df$Age, breaks=c(18, 24,30,36,42,48,54,60,66,72,78,84,90), right = FALSE)
-AgeGroups
+#AgeGroups
 AgeGroups<-gsub(',', ' to ', AgeGroups)
 AgeGroups<-gsub('\\[', '', AgeGroups)
 AgeGroups<-gsub('\\)', '', AgeGroups)
@@ -34,7 +34,7 @@ df2$Age<-AgeGroups
 #cts<-aggregate(df2$Age,FUN=length,data=df2)
 
 countvar<-data.frame(table(df2$Age))
-countvar
+#countvar
 colnames(countvar) <- c("Age", "CountOfFlights")
 
 
@@ -46,7 +46,7 @@ AgeSat<-data.frame(AgeSat)
 #CompOverallSat
 colnames(AgeSat) <- c("Age", "AverageCustRating")
 AgeSat<-merge(x = AgeSat, y = countvar, by = "Age", all = TRUE)
-AgeSat
+#AgeSat
 
 plot2<-ggplot(AgeSat, aes(x=Age, y=AverageCustRating, label=CountOfFlights)) + geom_text(aes(label=CountOfFlights), vjust=-1.0) + geom_bar(stat="identity",colour="white",fill="blue") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("Age wise average Customer Satisfaction") + theme(plot.title= element_text(hjust=0.5)) 
 #plot2<-ggplot(AgeSat, aes(x=Age, y=AverageCustRating)) + geom_bar(stat="identity") + theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
@@ -57,7 +57,7 @@ plot2<-ggplot(AgeSat, aes(x=Age, y=AverageCustRating, label=CountOfFlights)) + g
 # Gender plot
 countvar<-data.frame(table(df$Gender))
 colnames(countvar) <- c("Gender", "NoOfTravelers")
-countvar
+#countvar
 plot3<-ggplot(countvar, aes(x=Gender, y=NoOfTravelers)) + geom_text(aes(label=NoOfTravelers), vjust=-1.0) + geom_bar(stat="identity",colour="white",fill="lightseagreen") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("Gender wise Customers") + theme(plot.title= element_text(hjust=0.5)) 
 
 
@@ -65,9 +65,9 @@ plot3<-ggplot(countvar, aes(x=Gender, y=NoOfTravelers)) + geom_text(aes(label=No
 
 # Airline Status and Type of travel
 AirStatAnalysis<-aggregate(df[, 1], list(df$AirlineStatus), mean)
-AirStatAnalysis
+#AirStatAnalysis
 colnames(AirStatAnalysis) <- c("AirlineStatus", "AverageCustRating")
-AirStatAnalysis
+#AirStatAnalysis
 plot4<-ggplot(countvar, aes(x=AirlineStatus, y=AverageCustRating)) + 
 geom_text(aes(label=AverageCustRating), vjust=-1.0) + 
 geom_bar(stat="identity",colour="white",fill="lightseagreen") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("Gender wise Customers")
