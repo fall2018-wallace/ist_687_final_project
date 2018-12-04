@@ -32,6 +32,7 @@ AgeGroups<-gsub('\\)', '', AgeGroups)
 df2$Age<-AgeGroups
 
 AgeSat<-aggregate(df2[, 1], list(df2$Age), mean)
+
 AgeSat<-data.frame(AgeSat)
 
 #CompOverallSat
