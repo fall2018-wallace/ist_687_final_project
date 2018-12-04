@@ -152,6 +152,16 @@
             ],
             "source": "ReportGenerator2.R",
             "target": "AirStatus.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plot5",
+                    "type": "png"
+                }
+            ],
+            "source": "ReportGenerator2.R",
+            "target": "TypeTravel.png"
         }
     ],
     "nodes": [
@@ -225,6 +235,6 @@
             "name": "TypeTravel.png"
         }
     ],
-    "updated_at": "2018-12-04 03:35:53",
+    "updated_at": "2018-12-04 03:36:02",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
