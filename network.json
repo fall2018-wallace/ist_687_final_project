@@ -207,8 +207,11 @@
         },
         {
             "name": "GenderCustomers.png"
+        },
+        {
+            "name": "AirStatus.png"
         }
     ],
-    "updated_at": "2018-12-04 01:34:48",
+    "updated_at": "2018-12-04 02:20:25",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
