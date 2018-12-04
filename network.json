@@ -136,7 +136,7 @@
         {
             "ports": [
                 {
-                    "output": "port3",
+                    "output": "plot3",
                     "type": "png"
                 }
             ],
@@ -209,6 +209,6 @@
             "name": "GenderCustomers.png"
         }
     ],
-    "updated_at": "2018-12-04 01:34:09",
+    "updated_at": "2018-12-04 01:34:48",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
