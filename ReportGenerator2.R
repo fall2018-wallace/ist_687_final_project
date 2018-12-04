@@ -53,3 +53,15 @@ plot2<-ggplot(AgeSat, aes(x=Age, y=AverageCustRating, label=CountOfFlights)) + g
 #plot2
 
 
+
+
+
+
+
+
+df1<-df
+x1<-gsub('.*\\,', '', df1$OrginCity)
+df1$OrginCity<-x1
+#CustPerCity<-data.frame(table(df1$OrginCity))
+
+colnames(CustPerCity) <- c("State", "Flights")
