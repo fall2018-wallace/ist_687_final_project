@@ -82,3 +82,4 @@ colnames(TypeTravel) <- c("TypeOfTravel", "AverageSatisfaction")
 TypeTravel1<-data.frame(table(df$TypeofTravel))
 colnames(TypeTravel1) <- c("TypeOfTravel", "AverageSatisfaction")
 
+
