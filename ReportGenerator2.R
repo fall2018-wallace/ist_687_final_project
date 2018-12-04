@@ -67,5 +67,7 @@ plot3<-ggplot(countvar, aes(x=Gender, y=NoOfTravelers)) + geom_text(aes(label=No
 AirStatAnalysis<-aggregate(df[, 1], list(df$AirlineStatus), mean)
 AirStatAnalysis
 colnames(AirStatAnalysis) <- c("AirlineStatus", "AverageCustRating")
-
-plot4<-ggplot(countvar, aes(x=AirlineStatus, y=AverageCustRating)) + geom_text(aes(label=AverageCustRating), vjust=-1.0) + geom_bar(stat="identity",colour="white",fill="lightseagreen") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("Gender wise Customers")
+AirStatAnalysis
+plot4<-ggplot(countvar, aes(x=AirlineStatus, y=AverageCustRating)) + 
+geom_text(aes(label=AverageCustRating), vjust=-1.0) + 
+geom_bar(stat="identity",colour="white",fill="lightseagreen") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("Gender wise Customers")
