@@ -72,6 +72,6 @@ row.names(SatState) <- NULL
 SatState$state <- NULL
 row.names(SatState) <- StateNames
 str(SatState)
-g<-ggplot(SatState,aes(x=row.names(SatState),y=sat))+geom_histogram()
+g<-ggplot(SatState,aes(x=row.names(SatState)))+geom_histogram()
 g
 #colnames(CustPerCity) <- c("State", "Flights")
