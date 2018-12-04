@@ -26,17 +26,6 @@
                 }
             ],
             "source": "clean.R",
-            "target": "LinearModel.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "df",
-                    "output": "df",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "clean.R",
             "target": "SelectDataSet.R"
         },
         {
@@ -49,27 +38,6 @@
             ],
             "source": "SelectDataSet.R",
             "target": "AssociationRule.R"
-        },
-        {
-            "ports": [
-                {
-                    "output": "plotLM2",
-                    "type": "png"
-                }
-            ],
-            "source": "LinearModel.R",
-            "target": "LinearModel2Plot.png"
-        },
-        {
-            "ports": [
-                {
-                    "input": "df",
-                    "output": "df",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "SelectDataSet.R",
-            "target": "Model.R"
         },
         {
             "ports": [
@@ -152,17 +120,21 @@
             ],
             "source": "ReportGenerator2.R",
             "target": "AirStatus.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plot5",
+                    "type": "png"
+                }
+            ],
+            "source": "ReportGenerator2.R",
+            "target": "TypeTravel.png"
         }
     ],
     "nodes": [
         {
             "name": "satisfactionSurvey.csv"
-        },
-        {
-            "assigned_to": "mfurtado",
-            "desc": "",
-            "name": "Model.R",
-            "task_status": "in progress"
         },
         {
             "assigned_to": "mfurtado",
@@ -172,24 +144,9 @@
         },
         {
             "assigned_to": "mfurtado",
-            "desc": "Linear model",
-            "name": "LinearModel.R",
-            "task_status": "in progress"
-        },
-        {
-            "assigned_to": "agupta22",
-            "desc": "",
-            "name": "AssociationRule.R",
-            "task_status": "in progress"
-        },
-        {
-            "assigned_to": "mfurtado",
             "desc": "Deleted extra 3 columns based on satisfaction\r\n\r\nCleaned and used the output for model. R\r\n",
             "name": "clean.R",
             "task_status": "validating"
-        },
-        {
-            "name": "LinearModel2Plot.png"
         },
         {
             "name": "BarPlotCustSat.png"
@@ -220,8 +177,17 @@
         },
         {
             "name": "AirStatus.png"
+        },
+        {
+            "name": "TypeTravel.png"
+        },
+        {
+            "assigned_to": "mfurtado",
+            "desc": "",
+            "name": "AssociationRule.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-12-04 02:20:48",
+    "updated_at": "2018-12-04 04:06:41",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
