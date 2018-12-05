@@ -130,23 +130,31 @@
             ],
             "source": "ReportGenerator2.R",
             "target": "TypeTravel.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plot1",
+                    "type": "png"
+                }
+            ],
+            "source": "AssociationRule.R",
+            "target": "aproiri1.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plot2",
+                    "type": "png"
+                }
+            ],
+            "source": "AssociationRule.R",
+            "target": "aproiri2.png"
         }
     ],
     "nodes": [
         {
             "name": "satisfactionSurvey.csv"
-        },
-        {
-            "assigned_to": "mfurtado",
-            "desc": "The Client can be changed here, kept separate for convenience",
-            "name": "SelectDataSet.R",
-            "task_status": "in progress"
-        },
-        {
-            "assigned_to": "mfurtado",
-            "desc": "Deleted extra 3 columns based on satisfaction\r\n\r\nCleaned and used the output for model. R\r\n",
-            "name": "clean.R",
-            "task_status": "validating"
         },
         {
             "name": "BarPlotCustSat.png"
@@ -186,8 +194,26 @@
             "desc": "",
             "name": "AssociationRule.R",
             "task_status": "in progress"
+        },
+        {
+            "name": "aproiri1.png"
+        },
+        {
+            "name": "aproiri2.png"
+        },
+        {
+            "assigned_to": "mfurtado",
+            "desc": "Deleted extra 3 columns based on satisfaction\r\n\r\nCleaned and used the output for model. R\r\n",
+            "name": "clean.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "mfurtado",
+            "desc": "The Client can be changed here, kept separate for convenience",
+            "name": "SelectDataSet.R",
+            "task_status": "validating"
         }
     ],
-    "updated_at": "2018-12-04 04:06:41",
+    "updated_at": "2018-12-05 18:19:04",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
