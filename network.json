@@ -26,49 +26,6 @@
                 }
             ],
             "source": "clean.R",
-            "target": "Model.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "df",
-                    "output": "df",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "clean.R",
-            "target": "Insight1.R"
-        },
-        {
-            "ports": [
-                {
-                    "output": "Plot1",
-                    "type": "png"
-                }
-            ],
-            "source": "Insight1.R",
-            "target": "Plot1.png"
-        },
-        {
-            "ports": [
-                {
-                    "input": "dfinsight",
-                    "output": "df",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "clean.R",
-            "target": "Insight.R"
-        },
-        {
-            "ports": [
-                {
-                    "input": "df",
-                    "output": "df",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "clean.R",
             "target": "SelectDataSet.R"
         },
         {
@@ -80,7 +37,38 @@
                 }
             ],
             "source": "SelectDataSet.R",
-            "target": "LinearModel.R"
+            "target": "AssociationRule.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plot1",
+                    "type": "png"
+                }
+            ],
+            "source": "ReportGenerator1.R",
+            "target": "BarPlotCustSat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plot2",
+                    "type": "png"
+                }
+            ],
+            "source": "ReportGenerator1.R",
+            "target": "BarPlotCustSat2.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "fulldf",
+                    "output": "fulldf",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "SelectDataSet.R",
+            "target": "ReportGenerator1.R"
         },
         {
             "ports": [
@@ -91,33 +79,82 @@
                 }
             ],
             "source": "SelectDataSet.R",
-            "target": "AssociationRule.R"
+            "target": "ReportGenerator2.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plot1",
+                    "type": "png"
+                }
+            ],
+            "source": "ReportGenerator2.R",
+            "target": "TravelorsPerCity.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plot2",
+                    "type": "png"
+                }
+            ],
+            "source": "ReportGenerator2.R",
+            "target": "AgeCustSat.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plot3",
+                    "type": "png"
+                }
+            ],
+            "source": "ReportGenerator2.R",
+            "target": "GenderCustomers.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plot4",
+                    "type": "png"
+                }
+            ],
+            "source": "ReportGenerator2.R",
+            "target": "AirStatus.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plot5",
+                    "type": "png"
+                }
+            ],
+            "source": "ReportGenerator2.R",
+            "target": "TypeTravel.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plot1",
+                    "type": "png"
+                }
+            ],
+            "source": "AssociationRule.R",
+            "target": "aproiri1.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plot2",
+                    "type": "png"
+                }
+            ],
+            "source": "AssociationRule.R",
+            "target": "aproiri2.png"
         }
     ],
     "nodes": [
         {
             "name": "satisfactionSurvey.csv"
-        },
-        {
-            "name": "Plot1.png"
-        },
-        {
-            "assigned_to": "agupta22",
-            "desc": "",
-            "name": "Insight1.R",
-            "task_status": "in progress"
-        },
-        {
-            "assigned_to": "agupta22",
-            "desc": "Generate multiple insights",
-            "name": "Insight.R",
-            "task_status": "in progress"
-        },
-        {
-            "assigned_to": "mfurtado",
-            "desc": "",
-            "name": "Model.R",
-            "task_status": "in progress"
         },
         {
             "assigned_to": "mfurtado",
@@ -127,23 +164,56 @@
         },
         {
             "assigned_to": "mfurtado",
-            "desc": "Linear model",
-            "name": "LinearModel.R",
-            "task_status": "in progress"
-        },
-        {
-            "assigned_to": "agupta22",
-            "desc": "",
-            "name": "AssociationRule.R",
-            "task_status": "proposed"
-        },
-        {
-            "assigned_to": "mfurtado",
             "desc": "Deleted extra 3 columns based on satisfaction\r\n\r\nCleaned and used the output for model. R\r\n",
             "name": "clean.R",
             "task_status": "validating"
+        },
+        {
+            "name": "BarPlotCustSat.png"
+        },
+        {
+            "name": "BarPlotCustSat2.png"
+        },
+        {
+            "assigned_to": "mfurtado",
+            "desc": "Reports for our client",
+            "name": "ReportGenerator2.R",
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "mfurtado",
+            "desc": "Graphs and others on overall data",
+            "name": "ReportGenerator1.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "TravelorsPerCity.png"
+        },
+        {
+            "name": "AgeCustSat.png"
+        },
+        {
+            "name": "GenderCustomers.png"
+        },
+        {
+            "name": "AirStatus.png"
+        },
+        {
+            "name": "TypeTravel.png"
+        },
+        {
+            "assigned_to": "mfurtado",
+            "desc": "",
+            "name": "AssociationRule.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "aproiri1.png"
+        },
+        {
+            "name": "aproiri2.png"
         }
     ],
-    "updated_at": "2018-11-29 18:29:22",
+    "updated_at": "2018-12-04 04:19:50",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
