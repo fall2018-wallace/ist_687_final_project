@@ -14,5 +14,7 @@ Custdf<-df[df$AirlineName == 'Southeast Airlines Co. ',]
 
 df<-Custdf
 
+str(fulldf)
+
 
 
