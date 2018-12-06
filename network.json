@@ -161,6 +161,16 @@
             ],
             "source": "SelectDataSet.R",
             "target": "ReportGenerator3.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plot3",
+                    "type": "png"
+                }
+            ],
+            "source": "ReportGenerator1.R",
+            "target": "GenderOverall.png"
         }
     ],
     "nodes": [
@@ -234,6 +244,6 @@
             "name": "GenderOverall.png"
         }
     ],
-    "updated_at": "2018-12-06 02:50:02",
+    "updated_at": "2018-12-06 02:50:12",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
