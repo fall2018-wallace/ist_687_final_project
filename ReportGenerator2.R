@@ -112,3 +112,4 @@ plat1Agg<-aggregate(plat1[, 5], list(plat1$Satisfaction), mean) #PriceSensitivit
 plat1Agg
 
 plat2<-aggregate(plat1[, 9], list(plat1$Satisfaction), mean
+plat2
