@@ -181,6 +181,16 @@
             ],
             "source": "ReportGenerator2.R",
             "target": "platType.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plot4",
+                    "type": "png"
+                }
+            ],
+            "source": "ReportGenerator1.R",
+            "target": "ClassPlot.png"
         }
     ],
     "nodes": [
@@ -260,6 +270,6 @@
             "name": "ClassPlot.png"
         }
     ],
-    "updated_at": "2018-12-06 16:57:29",
+    "updated_at": "2018-12-06 16:57:40",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
