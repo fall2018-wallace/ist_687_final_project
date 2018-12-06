@@ -174,18 +174,6 @@
             "name": "BarPlotCustSat2.png"
         },
         {
-            "assigned_to": "mfurtado",
-            "desc": "Reports for our client",
-            "name": "ReportGenerator2.R",
-            "task_status": "in progress"
-        },
-        {
-            "assigned_to": "mfurtado",
-            "desc": "Graphs and others on overall data",
-            "name": "ReportGenerator1.R",
-            "task_status": "in progress"
-        },
-        {
             "name": "TravelorsPerCity.png"
         },
         {
@@ -201,12 +189,6 @@
             "name": "TypeTravel.png"
         },
         {
-            "assigned_to": "mfurtado",
-            "desc": "",
-            "name": "AssociationRule.R",
-            "task_status": "in progress"
-        },
-        {
             "name": "aproiri1.png"
         },
         {
@@ -219,18 +201,39 @@
             "task_status": "completed"
         },
         {
-            "assigned_to": "mfurtado",
-            "desc": "The Client can be changed here, kept separate for convenience",
-            "name": "SelectDataSet.R",
-            "task_status": "validating"
-        },
-        {
             "assigned_to": "ljzeugne",
             "desc": "",
             "name": "ReportGenerator3.R",
-            "task_status": "proposed"
+            "task_status": "in progress"
+        },
+        {
+            "assigned_to": "agupta22",
+            "desc": "",
+            "name": "AssociationRule.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "mfurtado",
+            "desc": "The Client can be changed here, kept separate for convenience",
+            "name": "SelectDataSet.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "yzhong18",
+            "desc": "Graphs and others on overall data",
+            "name": "ReportGenerator1.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "agupta22",
+            "desc": "Reports for our client",
+            "name": "ReportGenerator2.R",
+            "task_status": "completed"
+        },
+        {
+            "name": "GenderOverall.png"
         }
     ],
-    "updated_at": "2018-12-06 02:27:38",
+    "updated_at": "2018-12-06 02:50:02",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
