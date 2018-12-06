@@ -255,8 +255,11 @@
         },
         {
             "name": "platType.png"
+        },
+        {
+            "name": "ClassPlot.png"
         }
     ],
-    "updated_at": "2018-12-06 16:40:51",
+    "updated_at": "2018-12-06 16:57:29",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
