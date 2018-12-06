@@ -225,10 +225,12 @@
             "task_status": "validating"
         },
         {
+            "assigned_to": "ljzeugne",
             "desc": "",
-            "name": "ReportGenerator3.R"
+            "name": "ReportGenerator3.R",
+            "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-12-06 01:54:40",
+    "updated_at": "2018-12-06 01:54:46",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
