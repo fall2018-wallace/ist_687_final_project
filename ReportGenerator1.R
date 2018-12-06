@@ -1,5 +1,5 @@
 
-#summary(fulldf)
+summary(fulldf)
 fdf<-fulldf
 #fulldf$AirlineName
 
@@ -28,5 +28,8 @@ colnames(genderData) <- c("Gender", "NoOfTravellers")
 
 plot3<-ggplot(genderData, aes(x=Gender, y=NoOfTravellers)) + geom_text(aes(label=NoOfTravellers), vjust=-1.0) + geom_bar(stat="identity",colour="white",fill="blue") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("Gender wise travellers in overall dataset")# + theme(plot.title= element_text(hjust=0.5)) 
 
+classData<-data.frame(table(fdf$Gender))
+classData
+colnames(genderData) <- c("Gender", "NoOfTravellers")
 
 
