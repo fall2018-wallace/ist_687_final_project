@@ -150,6 +150,17 @@
             ],
             "source": "AssociationRule.R",
             "target": "aproiri2.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "df",
+                    "output": "df",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "SelectDataSet.R",
+            "target": "ReportGenerator3.R"
         }
     ],
     "nodes": [
@@ -212,8 +223,14 @@
             "desc": "The Client can be changed here, kept separate for convenience",
             "name": "SelectDataSet.R",
             "task_status": "validating"
+        },
+        {
+            "assigned_to": "ljzeugne",
+            "desc": "",
+            "name": "ReportGenerator3.R",
+            "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-12-05 18:19:04",
+    "updated_at": "2018-12-06 02:27:38",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
