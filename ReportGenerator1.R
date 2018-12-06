@@ -26,5 +26,7 @@ genderData<-data.frame(table(fdf$Gender))
 genderData
 colnames(genderData) <- c("Gender", "NoOfTravellers")
 
+plot3<-ggplot(countvar, aes(x=Gender, y=AverageSatisfaction)) + geom_text(aes(label=NoOfTravelers), vjust=-1.0) + geom_bar(stat="identity",colour="white",fill="lightseagreen") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("Gender wise Customers") + theme(plot.title= element_text(hjust=0.5)) 
+
 
 
