@@ -101,9 +101,10 @@ plat2<-plat1
 
 
 plat2<-aggregate(plat2[, 1], list(plat2$TypeofTravel), mean)
-colnames(TypeTravel1) <- c("TypeOfTravel", "NoOfCustomers")
+colnames(plat2) <- c("TypeOfTravel", "AverageSatisfaction")
 plat2
-plot6<-ggplot(TypeTrav, aes(x=TypeOfTravel, y=AverageSatisfaction)) + geom_text(aes(label=NoOfCustomers), vjust=-1.0) + geom_bar(stat="identity",colour="white",fill="red") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("Customer Satisfaction based on Type of Travel") + theme(plot.title= element_text(hjust=0.5)) 
+plot6<-ggplot(plat2, aes(x=TypeOfTravel, y=AverageSatisfaction)) + geom_bar(stat="identity",colour="black",fill="blue") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("Platinum Customer Satisfaction based on Type of Travel") + theme(plot.title= element_text(hjust=0.5)) 
+
 plot5<-ggplot(TypeTrav, aes(x=TypeOfTravel, y=AverageSatisfaction)) + geom_text(aes(label=NoOfCustomers), vjust=-1.0) + geom_bar(stat="identity",colour="white",fill="red") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("Customer Satisfaction based on Type of Travel") + theme(plot.title= element_text(hjust=0.5)) 
 
 
