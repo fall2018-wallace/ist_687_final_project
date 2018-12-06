@@ -171,6 +171,16 @@
             ],
             "source": "ReportGenerator1.R",
             "target": "GenderOverall.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plot6",
+                    "type": "png"
+                }
+            ],
+            "source": "ReportGenerator2.R",
+            "target": "platType.png"
         }
     ],
     "nodes": [
@@ -247,6 +257,6 @@
             "name": "platType.png"
         }
     ],
-    "updated_at": "2018-12-06 16:40:38",
+    "updated_at": "2018-12-06 16:40:51",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
