@@ -1,7 +1,6 @@
 
 #Plotting number of customers 
 summary(df)
-str(df)
 
 df1<-df
 x1<-gsub('.*\\,', '', df1$OrginCity)
@@ -21,9 +20,6 @@ plot1<-ggplot(CustPerCity, aes(x=State, y=Flights)) + geom_bar(stat="identity",c
 fill="palevioletred3") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("State wise distribution
 of flights taken")+theme(plot.title= element_text(hjust=0.5))
 #plot1
-
-#Customer satisfaction per State
-
 
 #Customer Satisfaction based on age 
 df2<-df
@@ -94,3 +90,22 @@ TypeTrav
 
 plot5<-ggplot(TypeTrav, aes(x=TypeOfTravel, y=AverageSatisfaction)) + geom_text(aes(label=NoOfCustomers), vjust=-1.0) + geom_bar(stat="identity",colour="white",fill="red") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("Customer Satisfaction based on Type of Travel") + theme(plot.title= element_text(hjust=0.5)) 
 
+
+
+#PLATINUM ANALYSIS
+plat1<-df
+plat1<-plat1[plat1$AirlineStatus == "Platinum",]
+str(plat1)
+
+vBuckets<-replicate(length(plat1$Satisfaction),"Median")
+vBuckets[plat1$Satisfaction>3]<-"High"
+vBuckets[plat1$Satisfaction<3]<-"Low"
+
+plat1$Satisfaction<-as.factor(vBuckets)
+
+plat1Agg<-aggregate(plat1[, 11], list(plat1$Satisfaction), mean)#ShoppingAmountatAirport
+plat1Agg
+plat1Agg<-aggregate(plat1[, 12], list(plat1$Satisfaction), mean)#EatingandDrinkingatAirport
+plat1Agg
+plat1Agg<-aggregate(plat1[, 5], list(plat1$Satisfaction), mean) #PriceSensitivity
+plat1Agg
