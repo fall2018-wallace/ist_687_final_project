@@ -98,6 +98,10 @@ plat1<-plat1[plat1$AirlineStatus == "Platinum",]
 str(plat1)
 plat2<-plat1
 
+plat2<-aggregate(plat2[, 9], list(plat2$Satisfaction), mean)
+plat2
+
+
 vBuckets<-replicate(length(plat1$Satisfaction),"Median")
 vBuckets[plat1$Satisfaction>3]<-"High"
 vBuckets[plat1$Satisfaction<3]<-"Low"
