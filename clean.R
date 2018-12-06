@@ -1,6 +1,7 @@
 
 str(raw_data)
 
+
 CleanSatisfaction<-raw_data[(raw_data$Satisfaction=="1" | 
             raw_data$Satisfaction=="1.5" |
             raw_data$Satisfaction=="2" |
