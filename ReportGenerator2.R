@@ -99,3 +99,5 @@ str(plat1)
 
 plat1Agg<-aggregate(plat1[, 11], list(plat1$Satisfaction), mean)
 plat1Agg
+plat1Agg<-aggregate(plat1[, 12], list(plat1$Satisfaction), mean)
+plat1Agg
