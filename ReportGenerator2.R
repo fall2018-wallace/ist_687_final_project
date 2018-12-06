@@ -98,7 +98,7 @@ plat1<-plat1[plat1$AirlineStatus == "Platinum",]
 str(plat1)
 plat2<-plat1
 
-plat2<-aggregate(plat2[, 9], list(plat2$Satisfaction), mean)
+plat2<-aggregate(plat2[, 1], list(plat2$TypeofTravel), mean)
 plat2
 
 
