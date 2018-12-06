@@ -34,3 +34,8 @@ colnames(classData) <- c("TravelClass", "NoOfTravellers")
 plot4<-ggplot(classData, aes(x=TravelClass, y=NoOfTravellers)) + geom_text(aes(label=NoOfTravellers), vjust=-1.0) + geom_bar(stat="identity",colour="white",fill="blue") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("Class wise travellers in overall dataset")# + theme(plot.title= element_text(hjust=0.5)) 
 
 
+AirlineData<-data.frame(table(fdf$AirlineName))
+AirlineData
+colnames(AirlineData) <- c("Airline", "NoOfTravellers")
+plot5<-ggplot(AirlineData, aes(x=Airline, y=NoOfTravellers)) + geom_text(aes(label=NoOfTravellers), vjust=-1.0) + geom_bar(stat="identity",colour="white",fill="blue") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("Airline wise travellers in overall dataset")# + theme(plot.title= element_text(hjust=0.5)) 
+
