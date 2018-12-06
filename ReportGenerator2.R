@@ -90,3 +90,6 @@ TypeTrav
 
 plot5<-ggplot(TypeTrav, aes(x=TypeOfTravel, y=AverageSatisfaction)) + geom_text(aes(label=NoOfCustomers), vjust=-1.0) + geom_bar(stat="identity",colour="white",fill="red") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("Customer Satisfaction based on Type of Travel") + theme(plot.title= element_text(hjust=0.5)) 
 
+
+
+#PLATINUM ANALYSIS
