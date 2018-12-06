@@ -1,7 +1,7 @@
 
 #summary(fulldf)
 fdf<-fulldf
-summary(fulldf)
+fulldf$AirlineName
 
 # plotting var charts
 CompOverallSat<-aggregate(fdf[, 1], list(fdf$AirlineName), mean)
