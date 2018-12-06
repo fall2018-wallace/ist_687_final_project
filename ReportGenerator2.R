@@ -96,6 +96,7 @@ plot5<-ggplot(TypeTrav, aes(x=TypeOfTravel, y=AverageSatisfaction)) + geom_text(
 plat1<-df
 plat1<-plat1[plat1$AirlineStatus == "Platinum",]
 str(plat1)
+plat2<-plat1
 
 vBuckets<-replicate(length(plat1$Satisfaction),"Median")
 vBuckets[plat1$Satisfaction>3]<-"High"
