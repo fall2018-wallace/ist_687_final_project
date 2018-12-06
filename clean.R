@@ -25,7 +25,7 @@ b <- sub("Yes","1",a)
 df$Flightcancelled <- b
 df$Flightcancelled<-as.numeric(df$Flightcancelled)
 
-mean(df$Age)
+
 mode(df$Age)
 
 df$Satisfaction<- as.numeric(as.character(df$Satisfaction))
