@@ -106,4 +106,5 @@ plat1$Satisfaction<-as.factor(vBuckets)
 plat1Agg<-aggregate(plat1[, 11], list(plat1$Satisfaction), mean)
 plat1Agg
 plat1Agg<-aggregate(plat1[, 12], list(plat1$Satisfaction), mean)
+plat1Aggplat1Agg<-aggregate(plat1[, 12], list(plat1$Satisfaction), mean)
 plat1Agg
