@@ -23,5 +23,6 @@ plot2<-ggplot(CompOverallSat, aes(x=Airline, y=AverageCustRating)) + geom_bar(st
 
 
 genderData<-data.frame(table(fdf1$Gender))
+genderData
 
 
