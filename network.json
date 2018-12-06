@@ -150,23 +150,22 @@
             ],
             "source": "AssociationRule.R",
             "target": "aproiri2.png"
+        },
+        {
+            "ports": [
+                {
+                    "input": "df",
+                    "output": "df",
+                    "type": "r_obj"
+                }
+            ],
+            "source": "SelectDataSet.R",
+            "target": "ReportGenerator3.R"
         }
     ],
     "nodes": [
         {
             "name": "satisfactionSurvey.csv"
-        },
-        {
-            "assigned_to": "mfurtado",
-            "desc": "The Client can be changed here, kept separate for convenience",
-            "name": "SelectDataSet.R",
-            "task_status": "in progress"
-        },
-        {
-            "assigned_to": "mfurtado",
-            "desc": "Deleted extra 3 columns based on satisfaction\r\n\r\nCleaned and used the output for model. R\r\n",
-            "name": "clean.R",
-            "task_status": "validating"
         },
         {
             "name": "BarPlotCustSat.png"
@@ -212,8 +211,26 @@
         },
         {
             "name": "aproiri2.png"
+        },
+        {
+            "assigned_to": "mfurtado",
+            "desc": "Deleted extra 3 columns based on satisfaction\r\n\r\nCleaned and used the output for model. R\r\n",
+            "name": "clean.R",
+            "task_status": "completed"
+        },
+        {
+            "assigned_to": "mfurtado",
+            "desc": "The Client can be changed here, kept separate for convenience",
+            "name": "SelectDataSet.R",
+            "task_status": "validating"
+        },
+        {
+            "assigned_to": "ljzeugne",
+            "desc": "",
+            "name": "ReportGenerator3.R",
+            "task_status": "proposed"
         }
     ],
-    "updated_at": "2018-12-04 04:19:50",
+    "updated_at": "2018-12-06 01:54:52",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }

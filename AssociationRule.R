@@ -1,4 +1,5 @@
 
+library(methods)
 summary(df)
 createBuckets<- function(vec){
   q <- quantile(vec, c(0.4, 0.6))
@@ -24,19 +25,19 @@ scheduleddeparturehour<-createBuckets(df$ScheduledDepartureHour)
 library(arules)
 library(arulesViz)
 
+ruleDF<- data.frame(Satisfaction,df$AirlineStatus,age,df$Gender,pricesensitive,yearoffirstflight,noofflightspa,df$TypeofTravel,shoppingamount,df$Class,scheduleddeparturehour,df$ArrivalDelaygreater5Mins)
 #ruleDF<- data.frame(Satisfaction,df$AirlineStatus,age,df$Gender,pricesensitive,yearoffirstflight,noofflightspa,df$TypeofTravel,shoppingamount,df$Class,scheduleddeparturehour,df$ArrivalDelaygreater5Mins)
 
-#hotelSurveyrule<-as(ruleDF,"transactions")
-#ruleH<- apriori(hotelSurveyrule, parameter=list(support=0.05, confidence=0.5),appearance = list(default="lhs", rhs=("Satisfaction=High")))
-#inspect(ruleH)
-#plot(ruleH)
+hotelSurveyruleDFSE<-as(ruleDF,"transactions")
 
-#ruleL<- apriori(hotelSurveyruleDFSE, parameter=list(support=0.01, confidence=0.9),appearance = list(default="lhs", rhs=("Satisfaction=Low")))
-#inspect(ruleL)
-#plot(ruleL)
+rulesetsoutheastH<- apriori(hotelSurveyruleDFSE, parameter=list(support=0.05, confidence=0.8),appearance = list(default="lhs", rhs=("Satisfaction=High")))
 
-#goodrules1<-sort(ruleH,by="lift")[1:10]
-#inspect(goodrules1)
+goodrulesH<-sort(rulesetsoutheastH,by="lift")[1:5]
+inspect(goodrulesH)
+plot1<-plot(goodrulesH, method = "graph", engine = "htmlwidget")
 
-#goodrules2<-sort(ruleL,by="lift")[1:10]
-#inspect(goodrules2)
+rulesetsoutheastL<- apriori(hotelSurveyruleDFSE, parameter=list(support=0.05, confidence=0.5),appearance = list(default="lhs", rhs=("Satisfaction=Low")))
+
+
+goodrules2<-sort(rulesetsoutheastL,by="lift")[1:10]
+plot2<-plot(goodrules2, method = "graph", engine = "htmlwidget")
