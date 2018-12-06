@@ -94,7 +94,7 @@ plot5<-ggplot(TypeTrav, aes(x=TypeOfTravel, y=AverageSatisfaction)) + geom_text(
 
 #PLATINUM ANALYSIS
 plat1<-df
-plat1[plat1$AirlineStatus == "Platinum",]
+plat1<-plat1[plat1$AirlineStatus == "Platinum",]
 str(plat1)
 
 plat1Agg<-aggregate(plat1[, 11], list(plat1$Satisfaction), mean)
