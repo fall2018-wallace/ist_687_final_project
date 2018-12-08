@@ -201,6 +201,16 @@
             ],
             "source": "ReportGenerator1.R",
             "target": "airlinePlot.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "GenderDistribution",
+                    "type": "png"
+                }
+            ],
+            "source": "ReportGenerator2.R",
+            "target": "GenderDistribution.png"
         }
     ],
     "nodes": [
@@ -286,6 +296,6 @@
             "name": "GenderDistribution.png"
         }
     ],
-    "updated_at": "2018-12-08 03:35:29",
+    "updated_at": "2018-12-08 03:35:48",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
