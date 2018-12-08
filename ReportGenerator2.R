@@ -112,4 +112,5 @@ plat1Agg<-aggregate(plat1[, 5], list(plat1$Satisfaction), mean) #PriceSensitivit
 plat1Agg
 
 GenderData <- data.frame(table(df$Gender))
+colnames(GenderData) <- c("Gender", "NoOfTravelers")
 
