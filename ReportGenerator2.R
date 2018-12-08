@@ -109,3 +109,6 @@ plat1Agg<-aggregate(plat1[, 12], list(plat1$Satisfaction), mean)#EatingandDrinki
 plat1Agg
 plat1Agg<-aggregate(plat1[, 5], list(plat1$Satisfaction), mean) #PriceSensitivity
 plat1Agg
+
+
+
