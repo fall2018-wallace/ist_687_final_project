@@ -154,17 +154,6 @@
         {
             "ports": [
                 {
-                    "input": "df",
-                    "output": "df",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "SelectDataSet.R",
-            "target": "ReportGenerator3.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "plot3",
                     "type": "png"
                 }
@@ -269,12 +258,6 @@
             "name": "airlinePlot.png"
         },
         {
-            "assigned_to": "ljzeugne",
-            "desc": "",
-            "name": "ReportGenerator3.R",
-            "task_status": "completed"
-        },
-        {
             "assigned_to": "yzhong18",
             "desc": "",
             "name": "AssociationRule.R",
@@ -296,6 +279,6 @@
             "name": "GenderDistribution.png"
         }
     ],
-    "updated_at": "2018-12-08 03:35:48",
+    "updated_at": "2018-12-08 19:30:04",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
