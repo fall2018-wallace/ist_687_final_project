@@ -114,3 +114,4 @@ plat1Agg
 GenderData <- data.frame(table(df$Gender))
 colnames(GenderData) <- c("Gender", "NoOfTravelers")
 
+GenderDistribution <- ggplot(GenderData, aes(x=Gender, y=NoOfTravelers)) + geom_text(aes(label=NoOfTravelers), vjust=-1.0) + geom_bar(stat="identity",colour="white",fill="blue") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("Gender wise travelers - Southeast Airlines") 
