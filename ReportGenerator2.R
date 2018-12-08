@@ -113,4 +113,4 @@ plat1Agg
 
 GenderData <- data.frame(table(df$Gender))
 colnames(GenderData) <- c("Gender", "NoOfTravelers")
-
+str(GenderData)
