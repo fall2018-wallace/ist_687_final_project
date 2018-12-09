@@ -135,3 +135,4 @@ timegrp<-gsub('\\[', '', timegrp)
 timegrp<-gsub('\\)', '', timegrp)
 
 timegrp<-na.omit(timegrp)
+timegrp
