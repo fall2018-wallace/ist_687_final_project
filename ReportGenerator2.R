@@ -34,7 +34,7 @@ df2$Age<-AgeGroups
 #cts<-aggregate(df2$Age,FUN=length,data=df2)
 
 countvar<-data.frame(table(df2$Age))
-#countvar
+countvar
 colnames(countvar) <- c("Age", "CountOfFlights")
 
 
