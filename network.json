@@ -200,6 +200,16 @@
             ],
             "source": "ReportGenerator2.R",
             "target": "agecount.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plot8",
+                    "type": "png"
+                }
+            ],
+            "source": "SelectDataSet.R",
+            "target": "durationtraveller.png"
         }
     ],
     "nodes": [
@@ -285,6 +295,6 @@
             "name": "durationtraveller.png"
         }
     ],
-    "updated_at": "2018-12-09 15:53:33",
+    "updated_at": "2018-12-09 15:53:42",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
