@@ -37,8 +37,10 @@ countvar<-data.frame(table(df2$Age))
 
 colnames(countvar) <- c("Age", "CountOfFlights")
 countvar
-plot7<-ggplot(countvar, aes(x=Age, y=CountOfFlights, label=CountOfFlights)) + geom_line(color="red") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("Age wise count of customers") + theme(plot.title= element_text(hjust=0.5)) 
-
+#plot7<-ggplot(countvar, aes(x=Age, y=CountOfFlights, label=CountOfFlights)) + geom_line(color="red") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("Age wise count of customers") + theme(plot.title= element_text(hjust=0.5)) 
+plot7<-ggplot(data=countvar, aes(x=Age, y=CountOfFlights, group=1)) +
+  geom_line(color="red")+
+  geom_point() + ggtitle("Age wise count of customers")
 
 AgeSat<-aggregate(df2[, 1], list(df2$Age), mean)
 
