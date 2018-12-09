@@ -1,6 +1,6 @@
 
 #Plotting number of customers 
-summary(df)
+#summary(df)
 
 df1<-df
 x1<-gsub('.*\\,', '', df1$OrginCity)
@@ -77,7 +77,7 @@ grouped_data <- aggregate(df, by=list(df$AirlineStatus, df$Satisfaction), FUN=le
 grouped_data <-grouped_data[,c(1:3)]
 #grouped_data
 colnames(grouped_data) <- c("AirlineStatus", "Satisfaction","NoOfTravelers")
-grouped_data
+#grouped_data
 
 plot4<-ggplot(grouped_data, aes(factor(Satisfaction), NoOfTravelers, fill = AirlineStatus)) +        geom_bar(stat = "identity", width = 0.2, position = "dodge") +   labs(list(x = "Satisfaction", y = "Number of Travellers",fill = "group"))
 
@@ -90,7 +90,7 @@ colnames(TypeTravel) <- c("TypeOfTravel", "AverageSatisfaction")
 TypeTravel1<-data.frame(table(df$TypeofTravel))
 colnames(TypeTravel1) <- c("TypeOfTravel", "NoOfCustomers")
 TypeTrav<-merge(x = TypeTravel, y = TypeTravel1, by = "TypeOfTravel", all = TRUE)
-TypeTrav
+#TypeTrav
 
 plot5<-ggplot(TypeTrav, aes(x=TypeOfTravel, y=AverageSatisfaction)) + geom_text(aes(label=NoOfCustomers), vjust=-1.0) + geom_bar(stat="identity",colour="white",fill="red") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("Customer Satisfaction based on Type of Travel") + theme(plot.title= element_text(hjust=0.5)) 
 
@@ -106,7 +106,7 @@ plat2<-plat1
 
 plat2<-aggregate(plat2[, 1], list(plat2$TypeofTravel), mean)
 colnames(plat2) <- c("TypeOfTravel", "AverageSatisfaction")
-plat2
+#plat2
 plot6<-ggplot(plat2, aes(x=TypeOfTravel, y=AverageSatisfaction)) + geom_bar(stat="identity",colour="black",fill="blue") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("Platinum Customer Satisfaction based on Type of Travel") + theme(plot.title= element_text(hjust=0.5)) 
 
 plot5<-ggplot(TypeTrav, aes(x=TypeOfTravel, y=AverageSatisfaction)) + geom_text(aes(label=NoOfCustomers), vjust=-1.0) + geom_bar(stat="identity",colour="white",fill="red") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("Customer Satisfaction based on Type of Travel") + theme(plot.title= element_text(hjust=0.5)) 
@@ -119,11 +119,11 @@ vBuckets[plat1$Satisfaction<3]<-"Low"
 plat1$Satisfaction<-as.factor(vBuckets)
 
 plat1Agg<-aggregate(plat1[, 11], list(plat1$Satisfaction), mean)#ShoppingAmountatAirport
-plat1Agg
+#plat1Agg
 plat1Agg<-aggregate(plat1[, 12], list(plat1$Satisfaction), mean)#EatingandDrinkingatAirport
-plat1Agg
+#plat1Agg
 plat1Agg<-aggregate(plat1[, 5], list(plat1$Satisfaction), mean) #PriceSensitivity
-plat1Agg
+#plat1Agg
 
 timedata<-df
 #timedata$Flighttimeinminutes
