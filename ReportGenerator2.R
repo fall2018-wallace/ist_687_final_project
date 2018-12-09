@@ -132,3 +132,5 @@ timegrp<- cut(timedata$Flighttimeinminutes, breaks=c(50, 100,150,200,250,300,350
 timegrp<-gsub(',', ' to ', timegrp)
 timegrp<-gsub('\\[', '', timegrp)
 timegrp<-gsub('\\)', '', timegrp)
+
+timegrp
