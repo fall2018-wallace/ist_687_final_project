@@ -126,6 +126,6 @@ plat1Agg<-aggregate(plat1[, 5], list(plat1$Satisfaction), mean) #PriceSensitivit
 plat1Agg
 
 timedata<-df
-timedata$Flighttimeinminutes
-
-timegrp<- cut(timedata$Flighttimeinminutes, c(0:100, 10))
+#timedata$Flighttimeinminutes
+timedata<-timedata[!(timedata$Flighttimeinminutes=="NA" & timedata$Flighttimeinminutes==0),]
+timegrp<- cut(timedata$Flighttimeinminutes, c(1:451, 50))
