@@ -125,4 +125,4 @@ plat1Agg
 plat1Agg<-aggregate(plat1[, 5], list(plat1$Satisfaction), mean) #PriceSensitivity
 plat1Agg
 
-
+str(df)
