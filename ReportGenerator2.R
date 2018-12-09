@@ -136,3 +136,4 @@ timegrp<-gsub('\\)', '', timegrp)
 
 timegrp<-na.omit(timegrp)
 timegrp<-data.frame(table(timegrp))
+timegrp
