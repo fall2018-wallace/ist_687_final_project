@@ -136,4 +136,4 @@ timegrp<-gsub('\\)', '', timegrp)
 
 timegrp<-na.omit(timegrp)
 timegrp<-data.frame(table(timegrp))
-timegrp
+plot8<-ggplot(timegrp, aes(x=timegrp, y=Freq)) + geom_text(aes(label=Freq), vjust=-1.0) + geom_bar(stat="identity",colour="black",fill="green") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("Duration of flight based on customers") + theme(plot.title= element_text(hjust=0.5)) + labs(list(x = "Duration of flight", y = "Number of Travellers",fill = "group"))
