@@ -240,12 +240,6 @@
             "task_status": "completed"
         },
         {
-            "assigned_to": "yzhong18",
-            "desc": "Graphs and others on overall data",
-            "name": "ReportGenerator1.R",
-            "task_status": "completed"
-        },
-        {
             "name": "GenderOverall.png"
         },
         {
@@ -277,8 +271,17 @@
         },
         {
             "name": "GenderDistribution.png"
+        },
+        {
+            "assigned_to": "ljzeugne",
+            "desc": "Graphs and others on overall data",
+            "name": "ReportGenerator1.R",
+            "task_status": "completed"
+        },
+        {
+            "name": "agecount.png"
         }
     ],
-    "updated_at": "2018-12-08 19:30:04",
+    "updated_at": "2018-12-09 15:08:00",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
