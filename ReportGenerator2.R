@@ -36,7 +36,7 @@ df2$Age<-AgeGroups
 countvar<-data.frame(table(df2$Age))
 
 colnames(countvar) <- c("Age", "CountOfFlights")
-countvar
+#countvar
 #plot7<-ggplot(countvar, aes(x=Age, y=CountOfFlights, label=CountOfFlights)) + geom_line(color="red") +theme(axis.text.x = element_text(angle = 90, hjust = 1))+ ggtitle("Age wise count of customers") + theme(plot.title= element_text(hjust=0.5)) 
 plot7<-ggplot(data=countvar, aes(x=Age, y=CountOfFlights, group=1)) +
   geom_line(color="red")+
@@ -128,7 +128,7 @@ plat1Agg<-aggregate(plat1[, 5], list(plat1$Satisfaction), mean) #PriceSensitivit
 timedata<-df
 #timedata$Flighttimeinminutes
 timedata<-timedata[!(timedata$Flighttimeinminutes=="NA" & timedata$Flighttimeinminutes==0),]
-timedata
+timedata$Flighttimeinminutes
 timegrp<- cut(timedata$Flighttimeinminutes, breaks=c(50, 100,150,200,250,300,350,400,450), right = FALSE)
 timegrp<-gsub(',', ' to ', timegrp)
 timegrp<-gsub('\\[', '', timegrp)
