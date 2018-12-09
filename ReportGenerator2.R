@@ -126,3 +126,4 @@ plat1Agg<-aggregate(plat1[, 5], list(plat1$Satisfaction), mean) #PriceSensitivit
 plat1Agg
 
 timedata<-df
+timedata$Flighttimeinminutes
