@@ -134,4 +134,4 @@ timegrp<-gsub(',', ' to ', timegrp)
 timegrp<-gsub('\\[', '', timegrp)
 timegrp<-gsub('\\)', '', timegrp)
 
-timegrp
+timegrp<-na.omit(timegrp)
