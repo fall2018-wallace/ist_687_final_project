@@ -24,7 +24,7 @@ of flights taken")+theme(plot.title= element_text(hjust=0.5))
 #Customer Satisfaction based on age 
 df2<-df
 AgeGroups<-cut(df$Age, breaks=c(18, 24,30,36,42,48,54,60,66,72,78,84,90), right = FALSE)
-AgeGroups
+#AgeGroups
 AgeGroups<-gsub(',', ' to ', AgeGroups)
 AgeGroups<-gsub('\\[', '', AgeGroups)
 AgeGroups<-gsub('\\)', '', AgeGroups)
@@ -129,4 +129,6 @@ timedata<-df
 #timedata$Flighttimeinminutes
 timedata<-timedata[!(timedata$Flighttimeinminutes=="NA" & timedata$Flighttimeinminutes==0),]
 timegrp<- cut(timedata$Flighttimeinminutes, breaks=c(50, 100,150,200,250,300,350,400,450), right = FALSE)
-timegrp
+timegrp<-gsub(',', ' to ', timegrp)
+timegrp<-gsub('\\[', '', timegrp)
+timegrp<-gsub('\\)', '', timegrp)
