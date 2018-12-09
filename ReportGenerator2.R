@@ -128,4 +128,5 @@ plat1Agg
 timedata<-df
 #timedata$Flighttimeinminutes
 timedata<-timedata[!(timedata$Flighttimeinminutes=="NA" & timedata$Flighttimeinminutes==0),]
-timegrp<- cut(timedata$Flighttimeinminutes, c(0:450, 50))
+timegrp<- cut(timedata$Flighttimeinminutes, breaks=c(50, 100,150,200,250,300,350,400,450), right = FALSE)
+timegrp
