@@ -128,7 +128,8 @@ plat1Agg
 timedata<-df
 #timedata$Flighttimeinminutes
 timedata<-timedata[!(timedata$Flighttimeinminutes=="NA" & timedata$Flighttimeinminutes==0),]
-timedatatimegrp<- cut(timedata$Flighttimeinminutes, breaks=c(50, 100,150,200,250,300,350,400,450), right = FALSE)
+timedata
+timegrp<- cut(timedata$Flighttimeinminutes, breaks=c(50, 100,150,200,250,300,350,400,450), right = FALSE)
 timegrp<-gsub(',', ' to ', timegrp)
 timegrp<-gsub('\\[', '', timegrp)
 timegrp<-gsub('\\)', '', timegrp)
