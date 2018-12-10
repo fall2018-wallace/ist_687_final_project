@@ -154,17 +154,6 @@
         {
             "ports": [
                 {
-                    "input": "df",
-                    "output": "df",
-                    "type": "r_obj"
-                }
-            ],
-            "source": "SelectDataSet.R",
-            "target": "ReportGenerator3.R"
-        },
-        {
-            "ports": [
-                {
                     "output": "plot3",
                     "type": "png"
                 }
@@ -205,12 +194,22 @@
         {
             "ports": [
                 {
-                    "output": "GenderDistribution",
+                    "output": "plot7",
                     "type": "png"
                 }
             ],
             "source": "ReportGenerator2.R",
-            "target": "GenderDistribution.png"
+            "target": "agecount.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "plot8",
+                    "type": "png"
+                }
+            ],
+            "source": "ReportGenerator2.R",
+            "target": "durationtraveller.png"
         }
     ],
     "nodes": [
@@ -251,12 +250,6 @@
             "task_status": "completed"
         },
         {
-            "assigned_to": "yzhong18",
-            "desc": "Graphs and others on overall data",
-            "name": "ReportGenerator1.R",
-            "task_status": "completed"
-        },
-        {
             "name": "GenderOverall.png"
         },
         {
@@ -267,12 +260,6 @@
         },
         {
             "name": "airlinePlot.png"
-        },
-        {
-            "assigned_to": "ljzeugne",
-            "desc": "",
-            "name": "ReportGenerator3.R",
-            "task_status": "completed"
         },
         {
             "assigned_to": "yzhong18",
@@ -294,8 +281,20 @@
         },
         {
             "name": "GenderDistribution.png"
+        },
+        {
+            "assigned_to": "ljzeugne",
+            "desc": "Graphs and others on overall data",
+            "name": "ReportGenerator1.R",
+            "task_status": "completed"
+        },
+        {
+            "name": "agecount.png"
+        },
+        {
+            "name": "durationtraveller.png"
         }
     ],
-    "updated_at": "2018-12-08 03:35:48",
+    "updated_at": "2018-12-09 15:54:00",
     "url": "https://github.com/fall2018-wallace/ist_687_final_project"
 }
