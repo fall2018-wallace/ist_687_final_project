@@ -27,5 +27,7 @@ df$Flightcancelled<-as.numeric(df$Flightcancelled)
 df$Satisfaction<- as.numeric(as.character(df$Satisfaction))
 LM1<-lm(Satisfaction~AirlineStatus+Age+Gender+PriceSensitivity+YearofFirstFlight+NoofFlightspa+XofFlightwithotherAirlines+TypeofTravel+NoofotherLoyaltyCards+ShoppingAmountatAirport+EatingandDrinkingatAirport+Class+DayofMonth+Flightdate+AirlineCode+ScheduledDepartureHour++Flightcancelled+DepartureDelayinMinutes+ArrivalDelayinMinutes+Flighttimeinminutes+FlightDistance+ArrivalDelaygreater5Mins,data=df)
 summary(LM1)
+LM2<-lm(Satisfaction~AirlineStatus+Age+Gender+ShoppingAmountatAirport+PriceSensitivity+YearofFirstFlight+NoofFlightspa+TypeofTravel+Class+ScheduledDepartureHour+ArrivalDelaygreater5Mins,data=df)
+summary(LM2)
 str(df)
 
